@@ -1,0 +1,66 @@
+/* General setup */
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+   
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  nav {
+    float: left;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'Nunito Sans', sans-serif;
+    
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+  h1 {
+    font-family: 'Cinzel Decorative', serif;
+}
+
+h1 .sub-heading {
+    display: block; /* Makes the span behave like a block element, putting it on a new line */
+    font-size: 0.5em; /* Adjusts the size of the font; 0.5em makes it half the size of the surrounding text */
+    font-family: 'Scope One', serif; /*  You can change the font for the sub-heading if you want */
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
