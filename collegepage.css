@@ -28,20 +28,29 @@
   nav {
     float: left;
     align-items: center;
-    
-    
+    display: flex;
+    gap: 36px;
     
   }
-  nav a{
+  nav a {
     font-family: 'Nunito Sans', sans-serif;
-    color: rgb(247, 236, 213);
-    font-size: 22px;
+    color: rgb(252, 245, 230);
+    font-size: 18px;
+    text-decoration: none; /* This will remove the underline */
+    cursor: pointer;
   }
+
+  nav a:hover {  
+    text-decoration: underline; /* This will add the underline on hover */
+   
+
+  }
+
   footer {
     clear: both;
   }
   
-  header, section, aside, nav, footer {
+  header, section, aside, footer {
     padding: 20px;
   }
   
@@ -56,7 +65,7 @@
   /* WRITE YOUR CODE BELOW HERE */
   h1 {
     font-family: 'Cinzel Decorative', serif;
-    color: rgb(247, 236, 213);
+    color: rgb(252, 245, 230);
 }
 
 h1 .sub-heading {
@@ -70,5 +79,7 @@ h1 .sub-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
  
