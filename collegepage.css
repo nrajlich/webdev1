@@ -14,13 +14,13 @@
   /* Layout */
   
   section {
-    float: left;
-    width: 50%;
+    
+    width: 100%;
     font-family: 'Nunito Sans', sans-serif;
   }
   
   aside {
-    float: left;
+    
     width: 30%;
     font-family: 'Nunito Sans', sans-serif;
   }
@@ -50,7 +50,7 @@
     clear: both;
   }
   
-  header, section, aside, footer {
+   aside, footer {
     padding: 20px;
   }
   
@@ -82,4 +82,8 @@ h1 .sub-heading {
     padding-left: 30px;
     padding-right: 30px;
 }
- 
+
+.brave-text
+{
+  background-image: url("campus.jpg");
+}
