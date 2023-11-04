@@ -28,11 +28,15 @@
   nav {
     float: left;
     align-items: center;
-    font-size: 22px;
-    font-family: 'Nunito Sans', sans-serif;
+    
+    
     
   }
-  
+  nav a{
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(247, 236, 213);
+    font-size: 22px;
+  }
   footer {
     clear: both;
   }
@@ -44,19 +48,23 @@
   /* header and footer */
   
   header, footer {
-    border-top: 5px solid #a66;
-    border-bottom: 5px solid #a66;
+    border-top: 5px solid rgb(106, 25, 25);
+    border-bottom: 5px solid rgb(106, 25, 25);
+    background-color: rgb(106, 25, 25);
   }
   
   /* WRITE YOUR CODE BELOW HERE */
   h1 {
     font-family: 'Cinzel Decorative', serif;
+    color: rgb(247, 236, 213);
 }
 
 h1 .sub-heading {
     display: block; /* Makes the span behave like a block element, putting it on a new line */
     font-size: 0.5em; /* Adjusts the size of the font; 0.5em makes it half the size of the surrounding text */
     font-family: 'Scope One', serif; /*  You can change the font for the sub-heading if you want */
+    
+
 }
 .header-content {
     display: flex;
