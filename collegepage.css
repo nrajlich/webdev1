@@ -86,4 +86,15 @@ h1 .sub-heading {
 .brave-text
 {
   background-image: url("campus.jpg");
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h2 {
+  margin: 0;
+}
+.brave-text2 {
+  position:absolute;
+  bottom: 0;
+
 }
