@@ -86,10 +86,11 @@ h1 .sub-heading {
 .brave-text
 {
   background-image: url("campus.jpg");
-  height: 1000px;
+  height: 700px;
   background-repeat: no-repeat;
   background-position: center;
   position:relative;
+  
 
 }
 h2 {
@@ -97,17 +98,24 @@ h2 {
   font-size: 40px;
 }
 .brave-text2 {
-  width: 60%;
+  width: 50%;
   position: absolute;
-  bottom: 0;
-  left: 50%; /* Center the div horizontally */
-  transform: translateX(-50%); /* Offset by half its width to truly center it */
+  top: 0;
+  padding-top: 250px;
   color: rgb(252, 245, 230);
-  text-align: center;
+  text-align: left;
   font-size: 20px;
-  padding-bottom: 70px;
+  padding-left: 45px;
 }
-
+.gradient-background 
+{
+  position:absolute;
+  width: 130%;
+  height: 100%;
+  background-image: linear-gradient(to right, black, transparent)
+  
+  }
+  
 p { margin: 0;
 
 }
