@@ -85,7 +85,7 @@ h1 .sub-heading {
 
 .brave-text
 {
-  background-image: url("campus.jpg");
+  background-image: url("images/campus.jpg");
   height: 700px;
   background-repeat: no-repeat;
   background-position: center;
@@ -129,4 +129,13 @@ p { margin: 0;
 .link-image {
   width: 14px;
   height: 14px;
+}
+
+.best-text {
+  text-align: center;
+
+  padding-top: 50px;
+  width: 50%;
+  font-size: 20px;
+  margin: 0 auto;
 }
