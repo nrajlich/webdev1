@@ -8,6 +8,7 @@
   body {
     margin: 0 auto;
     min-width: 1000px;
+    font-size: 20px;
    
   }
   
@@ -96,9 +97,10 @@ h1 .sub-heading {
 h2 {
   margin: 0;
   font-size: 40px;
+  padding-bottom: 12px;
 }
 .brave-text2 {
-  width: 50%;
+  width: 850px;
   position: absolute;
   top: 0;
   padding-top: 250px;
@@ -106,6 +108,7 @@ h2 {
   text-align: left;
   font-size: 20px;
   padding-left: 45px;
+  text-shadow: 0 0 10px black;
 }
 
 .brave-text2 a {
@@ -133,9 +136,47 @@ p { margin: 0;
 
 .best-text {
   text-align: center;
-
   padding-top: 50px;
+  padding-bottom: 30px; /* adjust this after*/
   width: 50%;
   font-size: 20px;
   margin: 0 auto;
+}
+
+.life {
+  color: rgb(138, 30, 30);
+}
+.list-button {
+  background-color: white; /* Default background color */
+  color: black; /* Text color */
+  border: 1px solid #8A1E1E; /* Border around the buttons */
+  padding: 10px 20px; /* Padding inside the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline from text */
+  cursor: pointer; /* Change mouse cursor on hover */
+  margin: 4px 4px; /* Spacing between buttons */
+  transition: background-color 0.3s; /* Smooth transition for the hover effect */
+  font-size: 20px;
+  
+}
+
+/* Hover effect */
+.list-button:hover {
+  background-color: #8A1E1E; /* Change background color on hover */
+  color: #FCF5E6;
+}
+
+/* Optionally, you can remove the default button styling */
+.list-button:focus {
+  outline: none;
+}
+
+.button-group{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+  grid-gap: 10px; /* Adjust the gap between buttons as needed */
+  width: 520px;
+  height: 180px;
+  margin: 0 auto;
+  
 }
