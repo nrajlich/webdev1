@@ -131,7 +131,7 @@ p { margin: 0;
 
 .best-text {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 30px; /* adjust this after*/
   width: 50%;
   font-size: 20px;
@@ -173,6 +173,7 @@ p { margin: 0;
   width: 520px;
   height: 180px;
   margin: 0 auto;
+  padding-bottom: 195px;
   
 }
 
@@ -186,10 +187,12 @@ p { margin: 0;
 .courses-text{
     
   font-family: 'Nunito Sans', sans-serif;
-    background-image: url("images/original.jpg");
+    background-image: url("images/handsup.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 685px;
+    height: 600px;
+    width: 100%;
     position:relative;
 
   }
@@ -197,9 +200,9 @@ p { margin: 0;
   .courses-text2{
       position: relative;
       top: 0;
-      padding-top: 155px;
+      padding-top: 95px;
       padding-right: 45px;
-      color: rgb(252, 245, 230);
+      color: #FCF5E6;
       text-align: right;
       font-size: 20px;
       text-shadow: 0 0 10px black;
@@ -216,4 +219,30 @@ p { margin: 0;
 {
   list-style: none;
   margin: 0;
+}
+
+.seemore {
+  background-color: #8A1E1E; /* Default background color */
+  color: #FCF5E6; /* Text color */
+  border: 1px solid white; /* Border around the buttons */
+  padding: 10px 20px; /* Padding inside the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline from text */
+  cursor: pointer; /* Change mouse cursor on hover */
+  margin: 4px 4px; /* Spacing between buttons */
+  transition: background-color 0.3s; /* Smooth transition for the hover effect */
+  font-size: 20px;
+  
+}
+
+.seemore:hover {
+  background-color: #FCF5E6; /* Change background color on hover */
+  color: #8A1E1E;
+}
+.seemore:focus {
+  outline: none;
+}
+
+.seemore-button {
+  padding-top: 15px;
 }
