@@ -9,7 +9,7 @@
     margin: 0 auto;
     min-width: 1000px;
     font-size: 20px;
-   
+    font-family: 'Nunito Sans', sans-serif;
   }
   
   /* Layout */
@@ -17,13 +17,11 @@
   section {
     
     width: 100%;
-    font-family: 'Nunito Sans', sans-serif;
+   
   }
   
   
   nav {
-    float: left;
-    align-items: center;
     display: flex;
     gap: 36px;
     
