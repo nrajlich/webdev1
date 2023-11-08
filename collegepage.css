@@ -142,27 +142,42 @@ p { margin: 0;
   color: rgb(138, 30, 30);
 }
 .list-button {
-  background-color: white; /* Default background color */
-  color: black; /* Text color */
-  border: 1px solid #8A1E1E; /* Border around the buttons */
   padding: 10px 20px; /* Padding inside the button */
   text-align: center; /* Center the text */
-  text-decoration: none; /* Remove underline from text */
-  cursor: pointer; /* Change mouse cursor on hover */
   margin: 4px 4px; /* Spacing between buttons */
-  transition: background-color 0.3s; /* Smooth transition for the hover effect */
   font-size: 20px;
   
 }
 
-/* Hover effect */
-.list-button:hover {
-  background-color: #8A1E1E; /* Change background color on hover */
-  color: #FCF5E6;
+.b {
+  border: 1px solid #8A1E1E; /* Border around the buttons */
+  background-color: white; /* Default background color */
+  color: black; /* Text color */
+  text-decoration: none; /* Remove underline from text */
+  cursor: pointer; /* Change mouse cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for the hover effect */
+
 }
 
+/* Hover effect */
+.b:hover  {
+  background-color: #8A1E1E; /* Change background color on hover */
+  color: #FCF5E6;
+  cursor: pointer;
+}
+
+.b:hover path  {
+  stroke: #FCF5E6;
+  cursor: pointer;
+}
+.c:hover path  {
+  stroke: transparent;
+  fill: #FCF5E6;
+}
+
+
 /* Optionally, you can remove the default button styling */
-.list-button:focus {
+.b:focus {
   outline: none;
 }
 
@@ -221,6 +236,8 @@ p { margin: 0;
   margin: 0;
 }
 
+
+
 .seemore {
   background-color: #8A1E1E; /* Default background color */
   color: #FCF5E6; /* Text color */
@@ -232,7 +249,6 @@ p { margin: 0;
   margin: 4px 4px; /* Spacing between buttons */
   transition: background-color 0.3s; /* Smooth transition for the hover effect */
   font-size: 20px;
-  
 }
 
 .seemore:hover {
@@ -245,4 +261,45 @@ p { margin: 0;
 
 .seemore-button {
   padding-top: 15px;
+}
+.grid-container {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+
+.rectangle {
+  width: 380px; /* Width relative to the grid column */
+  height: 300px; /* Height of the rectangle */
+  background-color: white; /* Default background color */
+  color: black; /* Text color */
+  border: 1px solid #8A1E1E; /* Text color */
+  text-align: center; /* Center the text horizontally */
+  font-size: 22px;
+  
+}
+
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.rectangle h3 {
+font-size: 35px;
+}
+
+.icons {
+  width: 60px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.interested {
+  text-align: center;
+  padding-bottom: 50px;
 }
