@@ -28,7 +28,7 @@
   }
   nav a {
     font-family: 'Nunito Sans', sans-serif;
-    color: rgb(252, 245, 230);
+    color: #FCF5E6;
     font-size: 18px;
     text-decoration: none; /* This will remove the underline */
     cursor: pointer;
@@ -51,21 +51,21 @@
   /* header and footer */
   
   header, footer {
-    border-top: 5px solid rgb(106, 25, 25);
-    border-bottom: 5px solid rgb(106, 25, 25);
-    background-color: rgb(106, 25, 25);
+    border-top: 5px solid #6A1919;
+    border-bottom: 5px solid #6A1919;
+    background-color: #6A1919;
   }
   
   /* WRITE YOUR CODE BELOW HERE */
   h1 {
     font-family: 'Cinzel Decorative', serif;
-    color: rgb(252, 245, 230);
+    color: #FCF5E6;
 }
 
 h1 .sub-heading {
     display: block; /* Makes the span behave like a block element, putting it on a new line */
-    font-size: 0.5em; /* Adjusts the size of the font; 0.5em makes it half the size of the surrounding text */
-    font-family: 'Scope One', serif; /*  You can change the font for the sub-heading if you want */
+    font-size: 20px; 
+    font-family: 'Scope One', serif; /*  I put a different font in the subheading */
     
 
 }
@@ -97,7 +97,7 @@ h2 {
   position: absolute;
   top: 0;
   padding-top: 250px;
-  color: rgb(252, 245, 230);
+  color: #FCF5E6;
   text-align: left;
   font-size: 20px;
   padding-left: 45px;
@@ -106,7 +106,7 @@ h2 {
 
 .brave-text2 a {
 
-  color: rgb(252, 245, 230);
+  color: #FCF5E6;
   
 }
 
@@ -148,7 +148,7 @@ p { margin: 0;
 }
 
 .b {
-  border: 1px solid #8A1E1E; /* Border around the buttons */
+  border: 1px solid #6A1919; /* Border around the buttons */
   background-color: white; /* Default background color */
   color: black; /* Text color */
   text-decoration: none; /* Remove underline from text */
@@ -159,7 +159,7 @@ p { margin: 0;
 
 /* Hover effect */
 .b:hover  {
-  background-color: #8A1E1E; /* Change background color on hover */
+  background-color: #6A1919; /* Change background color on hover */
   color: #FCF5E6;
   cursor: pointer;
 }
@@ -173,8 +173,6 @@ p { margin: 0;
   fill: #FCF5E6;
 }
 
-
-/* Optionally, you can remove the default button styling */
 .b:focus {
   outline: none;
 }
@@ -224,7 +222,7 @@ p { margin: 0;
     }
     .courses-text2 a {
 
-      color: rgb(252, 245, 230);
+      color: #FCF5E6;
 
     }
 
@@ -300,4 +298,8 @@ font-size: 35px;
 .interested {
   text-align: center;
   padding-bottom: 50px;
+}
+.footer-text {
+color: #FCF5E6;
+
 }
