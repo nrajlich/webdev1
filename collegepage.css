@@ -35,7 +35,7 @@
   }
 
   nav a:hover {  
-    text-decoration: underline; /* This will add the underline on hover */
+    text-decoration: underline; /* This will add the underline only when hover it the nav */
    
 
   }
