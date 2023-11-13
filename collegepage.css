@@ -43,6 +43,15 @@
     background-color: #6A1919;
   }
 
+  .header-content {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
   h1 {
     font-family: 'Cinzel Decorative', serif;
     color: #FCF5E6;
@@ -55,13 +64,6 @@
     letter-spacing: 5px;
     text-transform: uppercase;
 
-}
-.header-content {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
  
@@ -90,6 +92,7 @@ nav a:hover {
   height: 700px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position:relative;
   
 
