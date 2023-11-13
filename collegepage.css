@@ -5,13 +5,7 @@
     box-sizing: border-box;
   }
   
-  body {
-    margin: 0 auto;
-    min-width: 1000px;
-    font-size: 20px;
-    font-family: 'Nunito Sans', sans-serif;
-  }
-  
+ 
   /* Layout */
   
   section {
@@ -20,26 +14,7 @@
    
   }
   
-  
-  nav {
-    display: flex;
-    gap: 36px;
-    
-  }
-  nav a {
-    font-family: 'Nunito Sans', sans-serif;
-    color: #FCF5E6;
-    font-size: 18px;
-    text-decoration: none; /* This will remove the underline */
-    cursor: pointer;
-  }
-
-  nav a:hover {  
-    text-decoration: underline; /* This will add the underline only when hover it the nav */
-   
-
-  }
-
+ 
   footer {
     clear: both;
   }
@@ -50,32 +25,64 @@
   
   /* header and footer */
   
+ 
+  /* WRITE YOUR CODE BELOW HERE */
+
+
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+
   header, footer {
     border-top: 5px solid #6A1919;
     border-bottom: 5px solid #6A1919;
     background-color: #6A1919;
   }
-  
-  /* WRITE YOUR CODE BELOW HERE */
+
   h1 {
     font-family: 'Cinzel Decorative', serif;
     color: #FCF5E6;
 }
 
-h1 .sub-heading {
+.sub-heading {
     display: block; /* Makes the span behave like a block element, putting it on a new line */
-    font-size: 20px; 
+    font-size: 18px; 
     font-family: 'Scope One', serif; /*  I put a different font in the subheading */
-    
+    letter-spacing: 5px;
+    text-transform: uppercase;
 
 }
 .header-content {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
 }
+
+ 
+nav {
+  display: flex;
+  gap: 36px;
+  
+}
+nav a {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #FCF5E6;
+  font-size: 18px;
+  text-decoration: none; /* This will remove the underline */
+  cursor: pointer;
+}
+
+nav a:hover {  
+  text-decoration: underline; /* This will add the underline only when hover it the nav */
+ 
+}
+
 
 .brave-text
 {
