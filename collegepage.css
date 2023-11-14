@@ -180,6 +180,12 @@ color: #FCF5E6; /* Sets the color of links within brave-text2 */
   height: 100%;
   background-image: linear-gradient(to left, black, transparent)
 }
+
+ul {
+  list-style: none; /* Removes default list styling */
+  margin: 0; /* Removes default margin */
+}
+
 .courses-text{
     
   font-family: 'Nunito Sans', sans-serif; /* Sets the font family */
