@@ -1,83 +1,59 @@
-/* General setup */
-
-
-* {
-    box-sizing: border-box;
-  }
-  
- 
-  /* Layout */
-  
-  section {
+section {
     
-    width: 100%;
-   
+    width: 100%;/* Sets the section to take the full width of its parent container */
   }
   
- 
-  footer {
-    clear: both;
-  }
-  
-   aside, footer {
-    padding: 20px;
-  }
-  
-  /* header and footer */
-  
- 
-  /* WRITE YOUR CODE BELOW HERE */
-
-
   body {
-    margin: 0 auto;
-    min-width: 1000px;
-    font-size: 20px;
-    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 auto; /* Centers the body content and removes default margin */
+    min-width: 1000px; /* Sets a minimum width for the body */
+    font-size: 20px; /* Sets the default font size for the body */
+    font-family: 'Nunito Sans', sans-serif; /* Sets the default font family for the body */
   }
   
 
   header, footer {
-    border-top: 5px solid #6A1919;
-    border-bottom: 5px solid #6A1919;
-    background-color: #6A1919;
+    border-top: 5px solid #6A1919; /* Sets a top border with a specific color */
+    border-bottom: 5px solid #6A1919; /* Sets a bottom border with a specific color */
+    background-color: #6A1919; /* Sets a background color for both header and footer */
   }
 
   .header-content {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+  display: flex; /* Establishes a flexbox layout for the header content */
+  justify-content: space-between; /* Distributes items evenly with space between them */
+  align-items: center; /* Aligns items vertically at the center */
+  padding-left: 30px; /* Adds padding to the left of the header content */
+  padding-right: 30px; /* Adds padding to the right of the header content */
 }
 
 
   h1 {
-    font-family: 'Cinzel Decorative', serif;
-    color: #FCF5E6;
+    font-family: 'Cinzel Decorative', serif; /* Sets a specific font family for h1 elements */
+    color: #FCF5E6; /* Sets the text color for h1 elements */
 }
 
+
 .sub-heading {
-    display: block; /* Makes the span behave like a block element, putting it on a new line */
-    font-size: 18px; 
-    font-family: 'Scope One', serif; /*  I put a different font in the subheading */
-    letter-spacing: 5px;
-    text-transform: uppercase;
+  display: block; /* Ensures the sub-heading is on a new line and behaves as a block element */
+  font-size: 18px; /* Sets the font size for the sub-heading */
+  font-family: 'Scope One', serif; /* Applies a specific font to the sub-heading */
+  letter-spacing: 5px; /* Increases spacing between characters */
+  text-transform: uppercase; /* Converts text to uppercase */
 
 }
 
  
 nav {
   display: flex;
-  gap: 36px;
+  gap: 36px; /* Sets the space between each nav item */
   
+
 }
 nav a {
-  color: #FCF5E6;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 18px;
-  text-decoration: none; /* This remove the underline */
-  cursor: pointer;
+  color: #FCF5E6; /* Sets the text color of nav links */
+  font-family: 'Nunito Sans', sans-serif; /* Specifies the font family for nav links */
+  font-size: 18px; /* Sets the font size for nav links */
+  text-decoration: none; /* Removes the underline from nav links */
+  cursor: pointer; /* Changes the cursor to a pointer on hover over nav links */
 }
 
 nav a:hover {  
@@ -87,62 +63,66 @@ nav a:hover {
 
 .brave-text
 {
-  background-image: url("images/campus.jpg");
-  height: 700px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position:relative;
+  background-image: url("images/campus.jpg"); /* Sets a background image */
+  height: 700px; /* Specifies the height of the element */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center; /* Centers the background image */
+  background-size: cover; /* Ensures the background image covers the entire element */
+  position: relative; /* Positions the element relative to its normal position */
   
-
 }
+
 h2 {
   margin: 0;/* This remove the extra space between the image and the header*/
   font-size: 40px; 
   padding-bottom: 12px;
 }
 .brave-text2 {
-  width: 850px;
-  position: absolute;
-  top: 0;
-  padding-top: 250px;
-  color: #FCF5E6;
-  text-align: left;
-  font-size: 20px;
-  padding-left: 45px;
-  text-shadow: 0 0 10px black;
+  width: 850px; /* Sets the width of the element */
+  position: absolute; /* Positions the element absolutely relative to its nearest positioned ancestor */
+  top: 0; /* Positions the element at the top of the container */
+  padding-top: 250px; /* Adds padding at the top of the element */
+  color: #FCF5E6; /* Sets the text color */
+  text-align: left; /* Aligns text to the left */
+  font-size: 20px; /* Sets the font size */
+  padding-left: 45px; /* Adds padding to the left */
+  text-shadow: 0 0 10px black; /* Adds a text shadow into the text - I put this for the text be more legible against the image */
 }
 
 .brave-text2 a {
 
-  color: #FCF5E6;
+color: #FCF5E6; /* Sets the color of links within brave-text2 */
   
 }
 
 .gradient-background 
 {
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to right, black, transparent)
+  position: absolute; /* Positions the element absolutely within its container */
+  width: 100%; /* Sets the width to cover the entire width of its container */
+  height: 100%; /* Sets the height to cover the entire height of its container */
+  background-image: linear-gradient(to right, black, transparent); /* Creates a linear gradient background from black to transparent */
+
   }
   
+
 .link-image {
-  width: 14px;
-  height: 14px;
+  width: 14px; /* Sets the width of the link image to 14 pixels */
+  height: 14px; /* Sets the height of the link image to 14 pixels */
 }
+
 
 .best-text {
-  text-align: center;
-  padding-top: 80px;
-  padding-bottom: 30px; 
-  width: 45%;
-  font-size: 20px;
-  margin: 0 auto;
+  text-align: center; /* Centers the text horizontally within the .best-text element */
+  padding-top: 90px; /* Adds 90 pixels of padding to the top of the .best-text element */
+  padding-bottom: 30px; /* Adds 30 pixels of padding to the bottom of the .best-text element */
+  width: 45%; /* Sets the width of the .best-text element to 45% of its parent container */
+  font-size: 20px; /* Sets the font size within the .best-text element to 20 pixels */
+  margin: 0 auto; /* Centers the .best-text element horizontally within its parent container */
 }
 
+
 .life {
-  color: rgb(138, 30, 30);
+  color: rgb(138, 30, 30);/* Set a color only to the words "life, next steps"*/
 }
 
 .button-group {
@@ -152,7 +132,7 @@ h2 {
   width: 520px; /* Sets the width of the entire grid container */
   height: 180px; /* Sets the height of the entire grid container */
   margin: 0 auto; /* Centers the grid container in its parent element while keeping the top and bottom margins at 0 */
-  padding-bottom: 195px; /* Adds padding to the bottom of the grid container */
+  padding-bottom: 125px; /* Adds padding to the bottom of the grid container */
 }
 
 
@@ -202,42 +182,34 @@ h2 {
 }
 .courses-text{
     
-  font-family: 'Nunito Sans', sans-serif;
-    background-image: url("images/handsup.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-    width: 100%;
-    position:relative;
+  font-family: 'Nunito Sans', sans-serif; /* Sets the font family */
+  background-image: url("images/handsup.jpg"); /* Sets the background image */
+  background-size: cover; /* Ensures the background image covers the entire element */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center; /* Centers the background image */
+  height: 600px; /* Sets the height of the element */
+  width: 100%; /* Sets the width of the element to cover the full width of its container */
+  position: relative; /* Positions the element relative to its normal position */
 
   }
 
   .courses-text2{
-      position: relative;
-      top: 0;
-      padding-top: 95px;
-      padding-right: 45px;
-      color: #FCF5E6;
-      text-align: right;
-      font-size: 20px;
-      text-shadow: 0 0 10px black;
-      margin: 0 auto;
+    position: relative; /* Positions the element relative to its normal position */
+    top: 0; /* Positions the element at the top of the container */
+    padding-top: 95px; /* Adds padding to the top of the element */
+    padding-right: 45px; /* Adds padding to the right of the element */
+    color: #FCF5E6; /* Sets the text color */
+    text-align: right; /* Aligns text to the right */
+    font-size: 20px; /* Sets the font size */
+    text-shadow: 0 0 10px black; text-shadow: 0 0 10px black; /* Adds a text shadow into the text - I put this for the text be more legible against the image */
+    margin: 0 auto; /* Centers the element horizontally */
      
     }
     .courses-text2 a {
 
-      color: #FCF5E6;
+      color: #FCF5E6;/* Sets the color of links within courses-text2 */
 
     }
-
-    ul 
-{
-  list-style: none;
-  margin: 0;
-}
-
-
 
 .seemore {
   background-color: #8A1E1E; /* Default background color */
@@ -289,23 +261,33 @@ h2 {
   padding-right: 50px;
 }
 
+
 .rectangle h3 {
-font-size: 35px;
+  font-size: 35px; /* Sets the font size of h3 to 35 pixels */
 }
+
 
 .icons {
-  width: 60px;
-  height: 100px;
-  display: block;
-  margin: 0 auto;
-  padding-top: 20px;
+  width: 60px; /* Sets the width of the icon to 60 pixels */
+  height: 100px; /* Sets the height of the icon to 100 pixels */
+  display: block; /* Changes the display to block, enabling width and height to take effect */
+  margin: 0 auto; /* Centers the icon horizontally within its container */
+  padding-top: 20px; /* Adds 20 pixels of padding at the top of the icon */
 }
-.interested {
-  text-align: center;
-  padding-bottom: 50px;
-}
-.footer-text {
-color: #FCF5E6;
-font-size: 15px;
 
+
+.interested {
+  text-align: center; /* Centers the text inside the .interested class */
+  padding-bottom: 50px; /* Adds 50 pixels of padding at the bottom */
+}
+
+
+.footer-text {
+  color: #FCF5E6; /* Sets the text color to a light shade (hex color #FCF5E6) */
+  font-size: 15px; /* Sets the font size to 15 pixels */
+}
+
+
+footer {
+  padding: 20px; /* Adds 20 pixels of padding inside the footer on all sides */
 }
