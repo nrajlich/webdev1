@@ -73,10 +73,10 @@ nav {
   
 }
 nav a {
-  font-family: 'Nunito Sans', sans-serif;
   color: #FCF5E6;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
-  text-decoration: none; /* This will remove the underline */
+  text-decoration: none; /* This remove the underline */
   cursor: pointer;
 }
 
@@ -84,7 +84,6 @@ nav a:hover {
   text-decoration: underline; /* This will add the underline only when hover it the nav */
  
 }
-
 
 .brave-text
 {
@@ -98,8 +97,8 @@ nav a:hover {
 
 }
 h2 {
-  margin: 0;
-  font-size: 40px;
+  margin: 0;/* This remove the extra space between the image and the header*/
+  font-size: 40px; 
   padding-bottom: 12px;
 }
 .brave-text2 {
@@ -126,12 +125,8 @@ h2 {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, black, transparent)
-  
   }
   
-p { margin: 0;
-
-}
 .link-image {
   width: 14px;
   height: 14px;
@@ -140,7 +135,7 @@ p { margin: 0;
 .best-text {
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 30px; /* adjust this after*/
+  padding-bottom: 30px; 
   width: 45%;
   font-size: 20px;
   margin: 0 auto;
@@ -149,12 +144,23 @@ p { margin: 0;
 .life {
   color: rgb(138, 30, 30);
 }
+
+.button-group {
+  display: grid; /* Sets up a grid layout for the container */
+  grid-template-columns: repeat(2, 1fr); /* Divides the grid into two equal columns */
+  grid-gap: 10px; /* Specifies the space between grid items, both rows and columns */
+  width: 520px; /* Sets the width of the entire grid container */
+  height: 180px; /* Sets the height of the entire grid container */
+  margin: 0 auto; /* Centers the grid container in its parent element while keeping the top and bottom margins at 0 */
+  padding-bottom: 195px; /* Adds padding to the bottom of the grid container */
+}
+
+
 .list-button {
   padding: 10px 20px; /* Padding inside the button */
   text-align: center; /* Center the text */
   margin: 4px 4px; /* Spacing between buttons */
-  font-size: 20px;
-  
+  font-size: 20px; 
 }
 
 .b {
@@ -167,7 +173,7 @@ p { margin: 0;
 
 }
 
-/* Hover effect */
+/* Buttons Hover effect */
 .b:hover  {
   background-color: #6A1919; /* Change background color on hover */
   color: #FCF5E6;
@@ -185,17 +191,6 @@ p { margin: 0;
 
 .b:focus {
   outline: none;
-}
-
-.button-group{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates two columns */
-  grid-gap: 10px; /* Adjust the gap between buttons as needed */
-  width: 520px;
-  height: 180px;
-  margin: 0 auto;
-  padding-bottom: 195px;
-  
 }
 
 .gradient-background2 {
