@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: sans-serif;
+    margin: 0;
 }
 
 h1 {
@@ -34,17 +35,20 @@ h2 {
 
 h3 {
  font-size: 20px;
+ 
+ 
 }
 
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(3, 1fr);
-    gap: 20px; 
-    padding-right: 60px;
-    padding-left: 60px;
+    gap: 45px; 
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 50px;
     content: left;
-
+flex-direction: column;
 
 }
 
@@ -53,17 +57,141 @@ h3 {
     box-shadow: 1px 1px 5px;
     padding: 20px;
     background-color: white;
-   
-}
-
-.grid-item img {
-    width: 30%;  /* This makes the image fill the width of the grid item */
-    height: 40%; /* Adjust the height as needed */
-    align-items: left;
+    width: 325px;
+    
+    position: relative;
     
 }
+
+
+.grid-item img {
+    width: 40%;  
+    position: absolute;
+    
+}
+.frog {
+    width: 20px;
+    height: 60px;
+}
+.inside-text {
+    text-align: left;
+    margin: 0;
+    padding-top: 75px;
+    padding-bottom: 30px;
+}
+
 
 .inside-text {
     text-align: left;
     margin: 0;
 }
+
+.rectangle2 {
+    width: 800px;
+    height: 125px;
+    background-color: rgb(202, 199, 199); 
+    border-radius: 5px;
+    
+}
+
+.text2 {
+    text-align: left;
+    padding-left: 35px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+/*GRID 2 */
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    gap: 45px; 
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 30px;
+    content: left;
+flex-direction: column;
+
+}
+
+.grid-item2 {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+    padding: 20px;
+    background-color: white;
+    width: 525px;
+    position: relative;
+    
+   
+}
+
+.grid-item2 img {
+    width: 15%;  
+    position: absolute;
+    
+}
+h4 {
+    font-size: 19px;
+    text-align: center;
+    padding-top: 48px;
+}
+
+/* Ready Code */
+
+
+section7 {
+    display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+     margin: 0 auto;
+  width: 1500px;
+  }
+  
+  
+  article7 {
+    border-left: 5px solid #aaaa;
+     flex: 150px;
+    margin: 20px;
+     padding: 20px;
+     }
+  
+   
+  section8 {
+    display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+     margin: 0 auto;
+  width: 1500px;
+  }
+  
+  
+  article8 {
+    border-left: 5px solid #aaaa;
+     flex: 150px;
+    margin: 20px;
+     padding: 20px;
+     }
+  
+   
+  section9 {
+    display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+     margin: 0 auto;
+  width: 1500px;
+  }
+  
+  
+  article9 {
+    border-left: 5px solid #aaaa;
+     flex: 150px;
+    margin: 20px;
+     padding: 20px;
+     }
+  
+
+     
