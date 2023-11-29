@@ -39,7 +39,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
-
+/*Grid container 1 */ 
 .grid-container {
     display: grid;
     grid-template-columns: 43% 57%;
@@ -83,6 +83,8 @@ h2 {
     
 
 }
+
+/*Grid 2*/
 
 .grid-container2 {
     display: grid;

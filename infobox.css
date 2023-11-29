@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*info box*/
+
+html {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* info box */ 
+
+.info-box {
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .info-box ul {
+    padding-left: 0;
+    margin-top: 0;
+  } 
+
+.info-box li {
+    float: left;
+    list-style-type: none;
+    width: 150px;
+}
+
+.info-box li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    line-height: 3;
+    background-color:  rgba(40, 57, 106, 0.781);
+    color: black;
+    text-align: center;
+}
+
+.info-box .panels {
+    height: 352px;
+    position: relative;
+    clear: both;
+}
+
+.info-box li a:focus,
+.info-box li a:hover {
+    background-color: rgba(40, 57, 106, 0.781);
+    color: white;
+}
+
+.info-box li a.active-tab {
+    background-color: rgb(5, 29, 96) ;
+    color: white;
+}
+
+.info-box article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 352px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(5, 29, 96);
+  }
+  
+  .info-box .active-panel {
+    z-index: 1;
+  }
+  
+
+
+/*label */
+
+label[for="toggle"] {
+    font-size: 3rem;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    top: -100px;
+}
+
+
