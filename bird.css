@@ -178,4 +178,9 @@ font-size: 25px;
     .welcome-text {
        width: initial;
     }
+
+    .grid-container2 {
+      display: flex;
+        flex-direction: column;
+    }
 }
