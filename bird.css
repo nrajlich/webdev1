@@ -196,7 +196,7 @@ font-size: 25px;
 
     }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1800px) {
   /* CSS styles for screens larger than 1200px */
   .grid-container {
     background-image: url("images/backbird2.jpg");
