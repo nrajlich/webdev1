@@ -150,7 +150,16 @@ cursor: pointer;
 
   @media screen and (max-width: 600px) {
 /*menu*/
+.bird:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255); 
+  width: 100%;
+  cursor: pointer;
+}
 
+h1 {
+  font-size: 65px;
+}
     .nav-links {
       display: none;
     }
@@ -214,12 +223,16 @@ font-size: 25px;
         
     }
     .tips-text {
-      width: 80%;
+      width: 90%;
     }
     .gear-text{
-      width: 80%;
-
+      width: 90%;
     }
+
+    .text3 {
+      padding-top: 40px;
+    }
+
 }
 @media only screen and (min-width: 1800px) {
   /* CSS styles for screens larger than 1200px */
