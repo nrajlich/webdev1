@@ -243,6 +243,11 @@ button {
     padding-top: 40px;
   }
 
+  .footer-text {
+    font-size: 12px;
+
+  }
+
 }
 
 @media only screen and (min-width: 1800px) {
@@ -348,6 +353,8 @@ footer {
   height: 150px;
   align-items: center;
   display: flex;
+  justify-content: center;
+
 
 }
 
@@ -355,6 +362,7 @@ footer {
 
   display: flex;
   height: 100%;
+  
 
 
 }
@@ -363,8 +371,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  font-size: 16px;
-  padding: 0;
+  font-size: 14px;
 
 
 }
@@ -416,7 +423,7 @@ footer {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   width: 100%;
-  cursor: pointer;
+  border: solid black 1px;
 }
 
 .birds-container {
@@ -425,8 +432,7 @@ footer {
   text-align: center;
   gap: 1px;
   padding-bottom: 80px;
-  padding-right: 40px;
-  padding-left: 40px;
+  
   padding-top: 20px;
 
 
@@ -441,6 +447,7 @@ footer {
   color: rgb(255, 255, 255);
   font-size: 18px;
   flex: 1 1 0px;
+  border: solid black 1px;
   /* ..Flex Basis 0*/
 }
 
