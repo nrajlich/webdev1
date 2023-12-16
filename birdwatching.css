@@ -1,11 +1,11 @@
 body {
-    margin: 0 auto;
-    font-size: 20px; 
+  margin: 0 auto;
+  font-size: 20px;
 
-  }
+}
 
 
- .section-divider {
+.section-divider {
   width: 60%;
   height: 1px;
   background-color: #000;
@@ -14,59 +14,59 @@ body {
 
 /* Nav Bar*/
 nav {
-    background-color: black;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
- display: flex;
- align-items: center;
- padding-right: 40px;
- 
- 
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
 
 
-  }
-
-  .logo {
-    width: 180px;
-    align-items: left;
-    display: flex;
-    padding-left: 20px;
-    }
-    
-
-  .nav-links {
-    display: flex;
-    gap: 30px; 
-    font-size: 19px;
-  }
 
 
-  nav a { 
-    color: #ffffff; 
-    text-decoration: none; 
-    cursor: pointer; 
+}
 
-   
-    
+.logo {
+  width: 180px;
+  align-items: left;
+  display: flex;
+  padding-left: 20px;
+}
 
-  }
-  
-  nav a:hover {  
-    text-decoration: underline;
-   
-  }
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  font-size: 19px;
+}
+
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+
+
+
+
+}
+
+nav a:hover {
+  text-decoration: underline;
+
+}
 
 /*Grid 1*/
 
-h2{
+h2 {
   margin: 0;
   font-family: 'Libre Baskerville', serif;
 }
 
 .intro-container {
-    background-image: url("images/backbird2.jpg");
-    height: 635px; 
+  background-image: url("images/backbird2.jpg");
+  height: 635px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -78,47 +78,48 @@ h2{
 
 h1 {
   font-family: 'Libre Baskerville', serif;
-    margin: 0;
-    font-size: 75px;
-    color: black;
+  margin: 0;
+  font-size: 75px;
+  color: black;
 }
 
 
 .welcome-text {
-    text-align: left;  
-    font-size: 19px;
-    width: 38%;
-    padding: 30px;
-    color: black;
+  text-align: left;
+  font-size: 19px;
+  width: 38%;
+  padding: 30px;
+  color: black;
 }
 
 .text1 {
-    margin: 0;
-    padding-bottom: 15px;
-    padding-top: 5px;
-    font-size: 20px;
- 
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  font-size: 20px;
+
 }
 
-.grid-item1{ 
-    display: flex;
-    align-items: center;
+.grid-item1 {
+  display: flex;
+  align-items: center;
 }
 
 
 
 
 button {
-width: 130px;
-height: 50px;
-background-color: black;
-color: white;
-font-size: 16px;
-border: none;
-cursor: pointer;
+  width: 130px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 
 
 }
+
 /* Grid 2*/
 
 .grid-container {
@@ -128,161 +129,173 @@ cursor: pointer;
   padding-right: 40px;
   padding-top: 100px;
   padding-bottom: 100px;
-    
+
 }
 
 
-.tips-text, .gear-text {
-    font-size: 18px;
-    text-align: left;  
-    width: 75%;
-    
+.tips-text,
+.gear-text {
+  font-size: 18px;
+  text-align: left;
+  width: 75%;
+
 }
 
 /* Hamburger */
 
 .hamburger {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  /*menu*/
+
+  .bird:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 65px;
+  }
+
+  .nav-links {
     display: none;
-}
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .nav-links.active {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    top: 100px;
+    right: 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 650px;
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 35px;
+  }
+
+  .hamburger.active {
+    font-size: 25px;
+
+  }
 
 
+  .intro-container {
+    background-image: url("images/backbird.3.jpg");
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    margin: 0;
 
+  }
 
-  @media screen and (max-width: 600px) {
-/*menu*/
-.bird:hover {
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255); 
-  width: 100%;
-  cursor: pointer;
-}
+  .welcome-text {
+    padding-left: 15px;
+    width: 100%;
+  }
 
-h1 {
-  font-size: 65px;
-}
-    .nav-links {
-      display: none;
-    }
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-top: 65px;
+    padding-bottom: 65px;
 
-    .nav-links.active {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        z-index: 2;
-        top: 100px;
-        right: 0px;
-        text-align: center;
-        background-color: rgba(0,0,0,0.95);
-        height: 650px;
-        width: 100%;
-        margin: 0;
-      font-size: 18px;
-        align-items: center;
-        justify-content: center;
-    }
+  }
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        color: #ffffff;
-        font-size: 35px;
-    }
+  .tips-text {
+    width: 90%;
+  }
 
-.hamburger.active {
-font-size: 25px;
+  .gear-text {
+    width: 90%;
+  }
 
-}
-
-
-    .intro-container {
-        background-image: url("images/backbird.3.jpg"); /* Replace with your image path */
-        background-size: cover;
-        background-position: center; /* Center the background image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        margin: 0;
-        
-    }
-
-    .welcome-text {
-       padding-left: 15px;
-       width: 100%;
-    }
-
-    .grid-container {
-      display: flex;
-        flex-direction: column;
-        padding-left: 20px;
-        padding-top: 20px;
-        padding-right: 0;
-        padding-top: 65px;
-        padding-bottom: 65px;
-        
-    }
-    .tips-text {
-      width: 90%;
-    }
-    .gear-text{
-      width: 90%;
-    }
-
-    .text3 {
-      padding-top: 40px;
-    }
+  .text3 {
+    padding-top: 40px;
+  }
 
 }
+
 @media only screen and (min-width: 1800px) {
+
   /* CSS styles for screens larger than 1200px */
   .intro-container {
     background-image: url("images/backbird2.jpg");
-    height: 1145px; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  width: 200px;
-  align-items: left;
-  display: flex;
-  padding-left: 20px;
+    height: 1145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
   }
-  
 
-.nav-links {
-  display: flex;
-  gap: 30px; 
-  font-size: 22px;
-}
+  .logo {
+    width: 200px;
+    align-items: left;
+    display: flex;
+    padding-left: 20px;
+  }
 
-h1 {
-  margin: 0;
-  font-size: 100px;
-  color: black;
-}
 
-h2 {
-  margin: 0;
-  font-size: 50px;
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 22px;
+  }
 
-}
+  h1 {
+    margin: 0;
+    font-size: 100px;
+    color: black;
+  }
 
-.text1 .text2 {
-  font-size: 35px;
+  h2 {
+    margin: 0;
+    font-size: 50px;
 
-}
-.welcome-text {
-  text-align: left;  
-  font-size: 35px;
-  width: 38%;
-  padding: 30px;
-  color: black;
-}
+  }
+
+  .text1 .text2 {
+    font-size: 35px;
+
+  }
+
+  .welcome-text {
+    text-align: left;
+    font-size: 35px;
+    width: 38%;
+    padding: 30px;
+    color: black;
+  }
 
 
 }
@@ -295,7 +308,7 @@ h2 {
 
 body {
   margin: 0;
-  
+
 }
 
 .gallery-text {
@@ -304,7 +317,7 @@ body {
 }
 
 p {
-  margin:0;
+  margin: 0;
   padding-top: 10px;
 }
 
@@ -342,24 +355,26 @@ footer {
 
   display: flex;
   height: 100%;
-  
-  
+
+
 }
+
 .footer-text {
   display: flex;
   flex-direction: column;
   color: #ffffff;
   font-size: 16px;
   padding: 0;
-  
-  
+
+
 }
 
-.footer-text p:hover {  
+.footer-text p:hover {
   text-decoration: underline;
   cursor: pointer;
- 
+
 }
+
 .header {
   text-align: center;
   padding: 32px;
@@ -399,10 +414,11 @@ footer {
 
 .bird:hover {
   color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255); 
-width: 100%;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
   cursor: pointer;
 }
+
 .birds-container {
   display: flex;
   flex-direction: row;
@@ -412,26 +428,27 @@ width: 100%;
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
-  
+
 
 }
 
 .bird {
   background-color: rgb(0, 0, 0);
- padding-top: 40px;
- padding-bottom: 40px;
- padding-right: 10px;
- padding-left: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
   color: rgb(255, 255, 255);
   font-size: 18px;
-  flex: 1 1 0px; /* ..Flex Basis 0*/
+  flex: 1 1 0px;
+  /* ..Flex Basis 0*/
 }
 
-.american-birds
-{
+.american-birds {
   margin: 0;
   padding-left: 40px;
 }
+
 .profile-pic {
   width: 200px;
   height: 200px;
@@ -453,14 +470,29 @@ h3 {
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
+
+  .grid-container {
+    padding-bottom: 45px;
+  }
   .birds-container {
     flex-direction: column;
+    
   }
-  .h2-main-birds 
-{
-  padding-left: 20px;
-}
-.bird:hover { display: none;
-}
-}
 
+  .h2-main-birds {
+    padding-left: 20px;
+  }
+
+  .bird:hover {
+    background-color: black;
+    color: white;
+  }
+  .birds-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .american-birds {
+    padding-left: 18px;
+    
+  }
+}
