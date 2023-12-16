@@ -472,11 +472,25 @@ h3 {
 @media (max-width: 800px) {
 
   .grid-container {
-    padding-bottom: 45px;
+    padding-bottom: 25px;
+  
   }
   .birds-container {
     flex-direction: column;
+    padding-top: 8px;
     
+  }
+
+.gallery-text {
+  padding-left: 18px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+  .row {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .h2-main-birds {
