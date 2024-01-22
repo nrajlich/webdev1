@@ -12,7 +12,7 @@ const Navbar = () => {
 
     let mobile = null;
     if (!nav) {
-        mobile = <div className=" lg:hidden font-poppins fixed top-[100px] w-[60%]  bg-[#1a1313]">
+        mobile = <div className=" ease-in-out duration-500 lg:hidden font-poppins fixed top-[100px] w-[60%]  bg-[#1a1313]">
             <ul className=" uppercase">
 
                 <li className='p-4 border-b border-red-900'>Home</li>
@@ -25,17 +25,17 @@ const Navbar = () => {
     }
 
     return (
-        <div className=' flex justify-between items-center h-24 pt-10 px-8 mx-auto text-white'>
+        <div className='  flex justify-between items-center h-24 pt-10 px-8 mx-auto text-white'>
                             <div className="p-4"><Avatar /></div>
 
-            <ul className='cursor-pointer font-poppins hidden lg:flex'>
-                <li className='p-4 hover:underline '>Home</li>
-                <li className='p-4 hover:underline '>My projects</li>
-                <li className='p-4 hover:underline '>About Me</li>
+            <ul className='cursor-pointer font-poppins hidden md:flex lg:flex'>
+                <li className='p-4 hover:text-red-500 '>Home</li>
+                <li className='p-4 hover:text-red-500 '>My projects</li>
+                <li className='p-4 hover:text-red-500 '>About Me</li>
 
             </ul>
 
-            <div className="lg:hidden" onClick={handleNav}>
+            <div className=" md:hidden lg:hidden" onClick={handleNav}>
                 
                 {!nav ? <MdClose className="text-white" size={25} /> : <FiMenu size={25} />}
             </div>

@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+  
+    
+    
+}
+
+.first-layout 
+{
+    background-color: rgb(177, 209, 229);
+    height: 550px;
+ 
+}
+
+h1 {
+    color: #01437D;
+}
+.welcome-text {
+    color:rgb(23, 23, 23)
+}
+
+/*NAV BAR!*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    font-family: 'Libre Baskerville', serif;
+   
+}
+
+.logo img {
+    max-width: 150px; 
+    padding-top: 20px;
+    height: auto;
+    align-items: left;
+    display: flex;
+    padding-left: 20px;
+ 
+}
+
+
+.nav-links 
+{
+    justify-content: space-between;
+    display: flex;
+    gap: 30px;
+  
+}
+
+nav a {
+    color:#01437D;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+   
+  
+  
+  }
+
+.header-content {
+   
+}
+
+/**/
+
