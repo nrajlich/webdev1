@@ -1,23 +1,11 @@
 body {
     margin: 0;
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
     
-    
-}
 
-.first-layout 
-{
-    background-color: rgb(177, 209, 229);
-    height: 550px;
- 
-}
-
-h1 {
-    color: #01437D;
-}
-.welcome-text {
-    color:rgb(23, 23, 23)
-}
 
 /*NAV BAR!*/
 
@@ -26,24 +14,24 @@ nav {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding-right: 40px;
-    font-family: 'Libre Baskerville', serif;
+    padding-right: 80px;
+   
    
 }
 
 .logo img {
-    max-width: 150px; 
+    max-width: 130px; 
     padding-top: 20px;
     height: auto;
     align-items: left;
     display: flex;
-    padding-left: 20px;
+    padding-left: 60px;
  
 }
 
 
 .nav-links 
-{
+{font-family: 'Kalnia', serif;
     justify-content: space-between;
     display: flex;
     gap: 30px;
@@ -51,18 +39,56 @@ nav {
 }
 
 nav a {
-    color:#01437D;
+    color:#01162a;
     text-decoration: none;
     cursor: pointer;
     font-size: 18px;
+    font-family: 'Nanum Myeongjo', serif;
    
   
   
   }
 
+
 .header-content {
+    width: 100%;
+    
    
 }
 
-/**/
 
+/*WELCOME TEXT*/
+
+h1 {
+    font-family: 'Kalnia', serif;
+    color: #01162a;
+    font-size: 45px;
+}
+
+
+.welcome-text {
+    color: rgb(23, 23, 23);
+    text-align: center;
+    font-size: 17px;
+   width: 50%;
+   padding-top: 100px;
+
+
+}
+
+/*Slider*/
+
+.container {
+    padding: 20px;
+}
+.slider-wrapper {
+    position: relative;
+    max-width: 1280px;
+    margin:0 auto;
+}
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+}
