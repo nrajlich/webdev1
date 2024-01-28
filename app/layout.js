@@ -1,6 +1,8 @@
 import { Inter, Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from './components/Navbar';
+import Hero from "./components/Hero";
+import { GeistSans } from 'geist/font/sans';
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const roboto = Roboto({ subsets: ["latin"], weight: '300', variable: '--font-roboto' });
@@ -14,9 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${roboto.variable} ${poppins.variable}`}>
+      <body className={`${inter.variable} ${roboto.variable} ${poppins.variable} ${GeistSans.variable}`}>
         <Navbar />
+        <Hero />
         {children}
+        
       </body>
     </html>
   );
