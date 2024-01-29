@@ -3,6 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import Avatar from "./Avatar";
 import { useState } from 'react';
+import MobileMenu from "./MobileMenu";
 const Navbar = () => {
     const [nav, setNav] = useState(true);
     const handleNav = () => {
@@ -12,16 +13,7 @@ const Navbar = () => {
 
     let mobile = null;
     if (!nav) {
-        mobile = <div className=" ease-in-out duration-500 lg:hidden font-poppins fixed top-[100px] w-[90%] h-[100%] bg-[#ffffff]">
-            <ul className=" text-black uppercase">
-
-                <li className='p-4 border-b border-red-900'>Home</li>
-                <li className='p-4 border-b border-red-900'>My projects</li>
-                <li className='p-4 border-b border-red-900'>About Me</li>
-            </ul>
-
- 
-        </div>
+        mobile = <MobileMenu/>
     }
 
     return (
