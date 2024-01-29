@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.variable} ${roboto.variable} ${poppins.variable} ${GeistSans.variable}`}>
         <Navbar />
-        <Hero />
+        
         {children}
         
       </body>
