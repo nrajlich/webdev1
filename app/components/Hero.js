@@ -1,5 +1,4 @@
 import React from 'react';
-import Typed from 'react-typed'
 const Hero = () => (
   <div className="justify-center md:pt-32 pt-6 lg:pt-32">
     <div className="items-center text-black w-full mx-auto text-center text-l flex flex-col justify-center">
@@ -15,11 +14,6 @@ const Hero = () => (
       </p>
       <div>
       <p className="md:text-5xl wsm:text-4xl text-xl font-bold">Sharing projects</p>
-      <Typed
-      strings={['Web Development solutions', 'Visual Aesthetic' , 'Graphics and more']}
-      typedSpeed={120}
-      backSpeed={140}
-       />
     </div>
     </div>
     
