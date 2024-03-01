@@ -1,0 +1,309 @@
+
+
+section {
+    
+    width: 100%;/* Sets the section to take the full width of its parent container */
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    font-size: 20px; 
+    font-family: 'Nunito Sans', sans-serif; 
+  }
+  
+
+  header, footer {
+    border-top: 1px solid #000000; 
+    height: 70px;
+    background-color: #000000; 
+  }
+
+  .header-content {
+  display: flex; /* Establishes a flexbox layout for the header content */
+  justify-content: space-between; /* Distributes items evenly with space between them */
+  align-items: center; /* Aligns items vertically at the center */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+  h1 {
+    font-family: 'Cinzel Decorative', serif;
+    color: #FCF5E6;
+}
+
+
+.sub-heading {
+  display: block; /* Ensures the sub-heading is on a new line and behaves as a block element */
+  font-size: 18px;
+  font-family: 'Scope One', serif;
+  letter-spacing: 5px; 
+  text-transform: uppercase;
+
+}
+
+ 
+nav {
+  display: flex;
+  gap: 36px; 
+  padding-bottom: 30px;
+
+}
+nav a { /*Styling the links */
+  color: #FCF5E6; 
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px; 
+  text-decoration: none; /* Removes the underline from nav links */
+  cursor: pointer; 
+}
+
+nav a:hover {  
+  text-decoration: underline;
+ 
+}
+
+.brave-text
+{
+  background-image: url("images/museum2.1.png"); 
+  height: 700px; 
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background image covers the entire element */
+  position: relative; 
+  
+}
+
+button {
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  
+  
+  }
+
+h2 {
+  margin: 0;/* This remove the extra space between the image and the header*/
+  font-size: 40px; 
+  padding-bottom: 12px;
+}
+.brave-text2 {
+  width: 850px; 
+  position: absolute; /* Positions the element absolutely relative to its nearest positioned ancestor */
+  top: 0; 
+  padding-top: 250px;
+  color: #FCF5E6; 
+  text-align: left; 
+  font-size: 20px;
+  padding-left: 45px; 
+  text-shadow: 0 0 10px black; /*Note:I put this for the text be more legible against the image */
+}
+
+.brave-text2 a {
+
+color: #FCF5E6; /* Sets the color of links within brave-text2 */
+  
+}
+
+.gradient-background 
+{
+  position: absolute; /* Positions the element absolutely within its container */
+  width: 0%; 
+  height: 0%; 
+  background-image: linear-gradient(to right, black, transparent); /* Creates a linear gradient background from black to transparent */
+
+  }
+  
+
+.link-image {
+  width: 14px; 
+  height: 14px; 
+}
+
+
+.best-text {
+  text-align: center; /* Centers the text horizontally within the .best-text element */
+  padding-top: 90px; 
+  padding-bottom: 30px; 
+  width: 45%; 
+  font-size: 20px; 
+  margin: 0 auto; }
+
+
+.life {
+  color: rgb(138, 30, 30);/* Set a color only to the words "life, next steps"*/
+}
+
+.button-group {
+  display: grid; /* Sets up a grid layout for the container */
+  grid-template-columns: repeat(2, 1fr); /* Divides the grid into two equal columns */
+  grid-gap: 10px;
+  width: 520px; 
+  height: 180px; 
+  margin: 0 auto; /* Centers the grid container in its parent element while keeping the top and bottom margins at 0 */
+  padding-bottom: 125px; 
+}
+
+
+.list-button {
+  padding: 10px 20px; 
+  text-align: center; 
+  margin: 4px 4px; /* Spacing between buttons */
+  font-size: 20px; 
+}
+
+.b {
+  border: 1px solid #6A1919; /* Border around the buttons */
+  background-color: white; /* Default background color */
+  color: black; /* Text color */
+  text-decoration: none; /* Remove underline from text */
+  cursor: pointer; /* Change mouse cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for the hover effect */
+
+}
+
+/* Buttons Hover effect */
+.b:hover  {
+  background-color: #6A1919; /* Change background color on hover */
+  color: #FCF5E6;
+  cursor: pointer;
+}
+
+.b:hover path  {
+  stroke: #FCF5E6;
+  cursor: pointer;
+}
+.c:hover path  {
+  stroke: transparent;
+  fill: #FCF5E6;
+}
+
+.b:focus {
+  outline: none;
+}
+
+.gradient-background2 {
+
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, black, transparent)
+}
+
+ul {
+  list-style: none; /* Removes default list styling */
+  margin: 0; /* Removes default margin */
+}
+
+.courses-text{
+    
+  font-family: 'Nunito Sans', sans-serif; 
+  background-image: url("images/handsup.jpg"); 
+  background-size: cover; /* Ensures the background image covers the entire element */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center; /* Centers the background image */
+  height: 600px; 
+  width: 100%; 
+  position: relative; /* Positions the element relative to its normal position */
+
+  }
+
+  .courses-text2{
+    position: relative; /* Positions the element relative to its normal position */
+    top: 0; /* Positions the element at the top of the container */
+    padding-top: 95px; 
+    padding-right: 45px; 
+    color: #FCF5E6; 
+    text-align: right; 
+    font-size: 20px; 
+    text-shadow: 0 0 10px black; text-shadow: 0 0 10px black; /* Note: I put this shadow for the text be more legible against the image */
+    margin: 0 auto; /* Centers the element horizontally */
+     
+    }
+    .courses-text2 a {
+
+      color: #FCF5E6;/* Sets the color of links within courses-text2 */
+
+    }
+
+    .seemore {
+      background-color: #8A1E1E;
+      color: #FCF5E6;
+      border: 1px solid white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 4px 4px;
+      transition: background-color 0.3s;
+      font-size: 20px;
+    }
+    
+
+.seemore:hover {
+  background-color: #FCF5E6; /* Change background color on hover */
+  color: #8A1E1E;
+}
+.seemore:focus {
+  outline: none;
+}
+
+.seemore-button {
+  padding-top: 15px;
+}
+.grid-container {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+.rectangle {
+  width: 380px;
+  height: 300px;
+  background-color: white;
+  color: black;
+  border: 1px solid #8A1E1E;
+  text-align: center;
+  font-size: 22px;
+}
+
+
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.rectangle h3 {
+  font-size: 35px; 
+}
+
+
+.icons {
+  width: 60px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
+.interested {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.footer-text {
+  color: #FCF5E6;
+  font-size: 15px;
+}
+
+footer {
+  padding: 20px;
+}
