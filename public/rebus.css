@@ -170,8 +170,46 @@ padding-bottom: 30px;
     vertical-align: middle;
     height:auto;
     width: 120%;
+    cursor: pointer;
   }
 
+  .row-gallery img {
+    object-fit: cover;
+    transition: .2s linear;
+    cursor: pointer; /* Add this line if you want the cursor to change to a pointer on hover */
+  }
+  
+  .row-gallery img:hover { /* Remove the space before :hover */
+    transform: scale(1.1);
+  }
+  
+  .row-gallery .popup-image{
+    position: fixed;
+    top: 0; left:0;
+    background: O rgba(0,0,0,.9);
+    height: 100%;
+    width:100%;
+    z-index: 100%;
+    }
+    
+
+.row-gallery .popup-image span{
+    position: absolute;
+    top:0; right:10px;
+    font-size: 60px;
+    font-weight: bolder; color: #fff;
+    cursor: pointer;
+    z-index: 100;
+    }
+
+
+.row-gallery .popup-image img{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width:750px;
+    }
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
 
@@ -197,6 +235,7 @@ padding-bottom: 30px;
       padding-right: 0;
     }
 }    
+
 
 
 /*Process*/
@@ -344,3 +383,96 @@ padding-bottom: 30px;
     color: #666;
 }
 
+/*Contact rebus*/
+
+.contact-box {
+    max-width: 500px;
+
+
+
+}
+.contact-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+   
+
+}
+
+
+
+
+.form-control {
+    margin-bottom: 10px;
+}
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control input, .form-control textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-control textarea {
+    resize: vertical;
+}
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #0056b3;
+} 
+
+
+
+/*Questions Intro*/
+
+
+.questions {
+    background: #ffffff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.questions-text {
+    padding-top: 75px;
+}
+
+.questions-text h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.questions-text h5 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 12px 0;
+    color: #777;
+}
+.questions-text p {
+    color: #666;
+}
+.questions-text .divider {
+    display: block;
+    margin: 20px 0px;
+    width: 150px;
+    height: 2px;
+    background-color: #3C8C8D;
+}
+
+.questions-text .buttons {
+    padding-top: 14px;
+}
