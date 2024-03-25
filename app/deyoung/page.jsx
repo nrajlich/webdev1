@@ -4,14 +4,15 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import { Button } from "@/components/ui/button"
+import GridImage from "./grid-image"
 
 export default function Deyoung() {
   return (
     <div className="bg-white">
       <header className="bg-[#fff] pt-8 pb-8">
-        <div className="container mx-auto flex justify-between">
-          <h1 className="text-2xl font-bold">de Young | Legion of Honor</h1>
-          <nav className="flex items-center space-x-4">
+        <div className="container items-center mx-auto flex justify-between">
+       <img className="h-20"src="images/deyoung-logo.png" alt="deyoungmuseum-logo"></img>
+          <nav className="hidden md:flex items-center space-x-4">
             <a className="text-black hover:underline" href="#">
               Visit
             </a>
@@ -29,6 +30,8 @@ export default function Deyoung() {
             </a>
             <Button className="bg-black text-white">Get tickets</Button>
           </nav>
+          <img class="md:hidden  h-6 xl:hidden"src="images/hamburger-deyoung.png" alt="hamburger-menu-icon"></img>
+
         </div>
       </header>
       <main>
@@ -37,63 +40,71 @@ export default function Deyoung() {
             alt="Lunar New Year Banner"
             className="w-full"
             height="400"
-            src="images/banner-main2.jpg"
+            src="images/banner-1.png"
             style={{
               aspectRatio: "1280/600",
               objectFit: "cover",
             }}
             width="1280"
           />
-         
+
         </section>
-    
-        
-              
-              <section className="py-8">
-          <div className="container mx-auto">
-            <h3 className="text-2xl font-bold mb-4">San Francisco's 
-            2024 Lunar Beginnings / Jan 21st - Feb 20th</h3>
+
+
+
+        <section className="py-20">
+          <div className="container mx-20">
+            <h3 className="text-3xl font-bold mb-4">San Francisco's
+              2024 Lunar Beginnings / Jan 21st - Feb 20th</h3>
             <div className="grid grid-cols-3 gap-4" />
           </div>
           <div className=" pl-20">
-              <p className="text-gray-700">
-                "A amazing dive into Chinese culture and digital art. The work of these artists are in fact a must need
-                appreciation." - Jhon Doe, Secret San Francisco.
-              </p></div>
+            <p className="text-gray-700 text-xl">
+              "A amazing dive into Chinese culture and digital art. The work of these artists are in fact a must need
+              appreciation." - Jhon Doe, Secret San Francisco.
+            </p></div>
         </section>
-       
-        <section className="py-8">
-          <div className="container mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Gallery</h3>
-            <div className="grid grid-cols-3 gap-4" />
+
+        <section className="pt-0 pb-20 pl-20">
+          <div className="container ">
+            <h3 className="text-3xl font-bold mb-4">Gallery</h3>
+            <div className="grid grid- md:grid-cols-3 lg:grid-cols-4 gap-2">
+              <GridImage src="images/dragon1.jpg" alt="Bird 1" rows={2} />
+              <GridImage src="images/dragon2.jpg" alt="Bird 2" rows={2} />
+              <GridImage src="images/dragon3.jpg" alt="Bird 3" />
+              <GridImage src="images/dragon4.jpg" alt="Bird 4" />
+              <GridImage src="images/dragon6.jpg" alt="Bird 6" rows={1} cols={2} />
+              <GridImage src="images/dragon5.jpg" alt="Bird 5" rows={1} cols={2} />
+            </div>
           </div>
         </section>
-        <section className="py-8 bg-gray-100">
-          <div className="container mx-auto">
-            <h3 className="text-2xl font-bold mb-4">In the news</h3>
-            <div className="grid grid-cols-2 gap-4">
-              <p className="text-gray-700">
+
+        <section className="py-20 bg-gray-100">
+          <div className="container mx-20">
+            <h3 className="text-3xl font-bold mb-4">In the news</h3>
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-6">
+              <p className="text-gray-700 text-xl">
                 "A amazing dive into Chinese culture and digital art. The work of these artists are in fact a must need
-                appreciation." - Jhon Doe, Secret San Francisco.
+                appreciation." <span className="italic">- Jhon Doe, Secret San Francisco.</span>
               </p>
-              <p className="text-gray-700">
-                "Vibrant testament to creativity and tradition." - Jane Roe, Secret San Francisco.
+              <p className="text-gray-700 text-xl">
+                "Vibrant testament to creativity and tradition." <span className="italic">- Jane Roe, Secret San Francisco.</span>
               </p>
             </div>
           </div>
         </section>
-        <section className="py-8">
-          <div className="container mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Shop</h3>
-            <div className="grid grid-cols-3 gap-4">
+        <section className="py-20">
+          <div className="container mx-20">
+            <h3 className="text-3xl font-bold mb-4">Shop</h3>
+            <div className="flex flex-col md:grid md:grid-cols-3 gap-6">
               <div>
                 <img
                   alt="Lunar Beginnings Flatiron Poster 16x24"
                   className="w-full"
                   height="200"
-                  src="/placeholder.svg"
+                  src="images/poster-deyoung.jpg"
                   style={{
-                    aspectRatio: "200/200",
+
                     objectFit: "cover",
                   }}
                   width="200"
@@ -109,9 +120,9 @@ export default function Deyoung() {
                   alt="Transamerica Building & Dragon Tote Bag"
                   className="w-full"
                   height="200"
-                  src="/placeholder.svg"
+                  src="images/black-bag.jpg"
                   style={{
-                    aspectRatio: "200/200",
+
                     objectFit: "cover",
                   }}
                   width="200"
@@ -127,9 +138,9 @@ export default function Deyoung() {
                   alt="De Young Museum - Dragon's Embrace 2024 Illustrated Book"
                   className="w-full"
                   height="200"
-                  src="images/banner-main2.jpg"
+                  src="images/book.jpg"
                   style={{
-                    aspectRatio: "200/200",
+
                     objectFit: "cover",
                   }}
                   width="200"
@@ -144,8 +155,8 @@ export default function Deyoung() {
           </div>
         </section>
       </main>
-      <footer className="bg-gray-800 text-white p-4">
-        <div className="container mx-auto grid grid-cols-3 gap-4">
+      <footer className="bg-zinc-300 text-black p-4">
+        <div className="container mx-auto grid grid-cols-3 gap-4 py-20">
           <div>
             <h4 className="font-bold">de Young</h4>
             <p>50 Hagiwara Tea Garden Drive</p>
@@ -179,10 +190,11 @@ export default function Deyoung() {
             <h4 className="font-bold mt-4">Privacy and Policy</h4>
           </div>
         </div>
-        <div className="text-center mt-4">
+        <div className="text-sm text-center mt-4 pb-6">
           <p>©2024 Fine Arts Museums of San Francisco</p>
         </div>
       </footer>
     </div>
-  )}
+  )
+}
 

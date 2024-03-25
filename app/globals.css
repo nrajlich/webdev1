@@ -26,3 +26,23 @@ body {
     text-wrap: balance;
   }
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
