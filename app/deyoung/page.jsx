@@ -69,13 +69,13 @@ export default function Deyoung() {
           <div className="container mx-20">
             <h3 className="text-3xl font-bold mb-4">Gallery</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-              <GridImage src="images/dragon1.jpg" alt="Bird 1" className="gri-rows-2" />
-              <GridImage src="images/dragon2.jpg" alt="Bird 2" className="gri-rows-2" />
+              <GridImage src="images/dragon1.jpg" alt="Bird 1" rows={2} />
+              <GridImage src="images/dragon2.jpg" alt="Bird 2" rows={2} />
               <GridImage src="images/dragon3.jpg" alt="Bird 3" />
               <GridImage src="images/dragon4.jpg" alt="Bird 4" />
-              <GridImage src="images/dragon6.jpg" alt="Bird 6" className="gri-cols-2" />
-              <GridImage src="images/dragon5.jpg" alt="Bird 5" className="gri-cols-2" />
-              <GridImage src="images/dragon7.png" alt="Bird 5"  />
+              <GridImage src="images/dragon6.jpg" alt="Bird 6" rows={1} cols={2} />
+              <GridImage src="images/dragon5.jpg" alt="Bird 5" rows={1} cols={2} />
+              
             </div>
           </div>
         </section>
