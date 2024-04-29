@@ -95,7 +95,7 @@ border: 1px solid #563d7c;
     height: 50vh; 
     overflow: hidden;
 }
-
+/* added */
 .fixed-img {
     position: absolute;
     top: 0;
@@ -118,13 +118,16 @@ border: 1px solid #563d7c;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
+
 
 .row {
     padding-top: 80px;
     padding-bottom: 30px;
 }
-
+/* added */
 .fun {
 
     margin-left: 15px;

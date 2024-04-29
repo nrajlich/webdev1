@@ -238,6 +238,83 @@ padding-bottom: 30px;
 
 
 
+
+
+
+
+/* added 
+.fixed-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; 
+    z-index: -1;
+    transform: translate3d(0, 0, 0); 
+}
+
+#fixed {
+    height: 100%; 
+    padding-top: 100px; 
+}
+ 
+.parallax {
+    background-image: url('img/rebus-fixed.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+
+*/
+
+
+
+
+    /*TRYING*/
+
+
+
+/* Parallax Effect Styles */
+.parallax {
+    /* Adjusted height for demonstration purposes */
+    height: 500px;
+    background-image: url('img/rebus-fixed1.2.jpg'); /* Default image for larger screens */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Content Styles */
+  .content {
+    height: 1200px; /* Adjust height as needed */
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive adjustments for mobile devices */
+  @media only screen and (max-width: 768px) {
+    .parallax {
+      background-image: url('img/rebus-fixed2.jpg'); /* Mobile-specific image */
+      background-attachment: scroll; /* Change to scroll on small devices */
+      background-size: cover; /* Ensures the image covers the full container */
+    }
+  }
+    /* TRYING */ 
+
+  
 /*Process*/
 
 .process-inner {
