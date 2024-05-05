@@ -23,8 +23,13 @@ color: black; }
 
 .navbar-light .navbar-nav .navbar-link{
 color: #000;
+
 }
 
+.nav-item a:hover {
+    color: #3C8C8D;
+    cursor: pointer;
+  }
 
 /* responsive css navbar */
 @media only screen and (max-width: 767px){
@@ -551,3 +556,26 @@ padding-bottom: 30px;
 }
 
 
+/*Footer*/
+
+.footer {
+    background-color: #3C8C8D;
+    font-family: 'inter';
+    color: #fff;
+   padding-left: 50px;
+   padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+
+}
+  .footer a {
+    color: #fff;
+  }
+  .footer a:hover {
+    color: #534c49;
+  }
+  .social-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
