@@ -1,0 +1,105 @@
+/*NAVBAR*/
+
+
+.navbar-brand img{
+    height: 50px;
+
+}
+
+.navbar-nav a {
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'inter';
+    font-weight: 400;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.navbar-light .navbar-brand:focus,
+.navbar-Light .navbar-brand:hover{
+
+color: black; }
+
+.navbar-light .navbar-nav .navbar-link{
+color: #000;
+
+}
+
+.nav-item a:hover {
+    color: #3C8C8D;
+    cursor: pointer;
+  }
+
+/* responsive css navbar */
+@media only screen and (max-width: 767px){
+.navbar-nav{
+padding-top: 30px;
+padding-bottom: 30px;
+}}
+
+.about {
+    background: #EDE7D8;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.about-intro {
+    margin-top: 45px;
+}
+
+.about-intro h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.about-intro h5 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 12px 0;
+    color: #777;
+}
+.about-intro p {
+    color: #666;
+}
+.about-intro .divider {
+    display: block;
+    margin: 20px 0px;
+    width: 150px;
+    height: 2px;
+    background-color: #3C8C8D;
+}
+
+.about-intro .buttons {
+    padding-top: 14px;
+}
+
+
+
+/*FOOTER*/
+
+.footer {
+    background-color: #3C8C8D;
+    font-family: 'inter';
+    color: #fff;
+   padding-left: 50px;
+   padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+
+}
+  .footer a {
+    color: #fff;
+  }
+  .footer a:hover {
+    color: #534c49;
+  }
+  .social-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+  }

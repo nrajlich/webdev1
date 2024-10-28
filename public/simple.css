@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f2;
+  }
+  
+
+  h1{ background-color: #b6eba9;}
+ 
+  .header h1 {
+    text-align: center; /* Center the H1 text */
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+  }
+  
+  .header p {
+    font-size: 18px;
+    color: #666;
+  
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  nav a:hover {
+    color: #66bb6a; /* Darker green for hover effect */
+  }
+
+  /* MENU */
+
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .menu {
+    width: 450px;
+    background-color: #fce458;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .menu h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .menu ul {
+    list-style: none;
+  }
+  
+  .menu ul li {
+    margin-bottom: 10px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #e0f7da;
+    color: #333;
+  }
+  
+/*CONTENT*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .content-box {
+    
+    margin: 20px;
+    background-color: #b3e5e0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .content-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    text-align: center; 
+    font-size: 36px;
+    color: #000000;
+   padding-top: 20px;
+   padding-bottom: 20px;
+    background-color: #d9b4e0;
+   
+  }
+  
+  .footer p {
+    font-size: 20px;
+    color: #000000;
+  
+  }
+
+  
+  
