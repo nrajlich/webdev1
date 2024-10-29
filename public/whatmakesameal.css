@@ -1,149 +1,20 @@
-/*Gallery*/
+body 
+{
+     /* Set background image */
+     background-image: url('images/paper.jpg'); /* Make sure to use the correct file extension */
+     background-size: cover; /* Ensures the image covers the entire background */
+     background-repeat: no-repeat; /* Prevents the image from repeating */
+     background-attachment: fixed; /* Keeps the image fixed while scrolling */
+     background-position: center; /* Centers the image */
+}
 
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
+footer {
+    width: 100%;
     margin: 0;
-  
-  }
-  
-  .gallery-text {
-    text-align: left;
-    padding: 32px;
-  }
-  
-  
-  p {
-    margin: 0;
-    padding-top: 10px;
-  }
-  
-  .row-gallery{
-    display: flex;
-    flex-wrap: wrap;
-   
-    padding-bottom: 80px;
-    justify-content: center;
-    padding-top: 80px;
- 
+    padding: 0;
+}
 
-  }
-
-  
-
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    height:auto;
-    width: 120%;
-    cursor: pointer;
-  }
-
-  .row-gallery img {
-    object-fit: cover;
-    transition: .2s linear;
-    cursor: pointer; }
-  
-  .row-gallery img:hover { 
-    transform: scale(1.1);
-  }
-  
-  .row-gallery .popup-image{
-    position: fixed;
-    top: 0; left:0;
-    background: O rgba(0,0,0,.9);
-    height: 100%;
-    width:100%;
-    z-index: 100%;
-    }
-    
-
-.row-gallery .popup-image span{
-    position: absolute;
-    top:0; right:10px;
-    font-size: 60px;
-    font-weight: bolder; color: #fff;
-    cursor: pointer;
-    z-index: 100;
-    }
-
-
-.row-gallery .popup-image img{
-    position: absolute;
-    top:50%; left:50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    width:750px;
-    }
-/* Responsive layout  */
-@media (max-width: 800px) {
-
-    .grid-container {
-      padding-bottom: 25px;
-    
-    }
-    .birds-container {
-      flex-direction: column;
-      padding-top: 8px;
-      
-    }
-  
-  .gallery-text {
-    padding-left: 18px;
+footer .container, footer .container-fluid {
+    padding-left: 0;
     padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  
-    .row-gallery{
-      padding-left: 0;
-      padding-right: 0;
-    }
-}    
-
-
-
-/* Parallax Effect Styles */
-.parallax {
-    /* Adjusted height for demonstration purposes */
-    height: 500px;
-    background-image: url('img/rebus-fixed1.2.jpg'); /* Default image for larger screens */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /* Content Styles */
-  .content {
-    height: 1200px; /* Adjust height as needed */
-    background-color: #fff;
-    color: #333;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  /* Responsive adjustments for mobile devices */
-  @media only screen and (max-width: 768px) {
-    .parallax {
-      background-image: url('img/rebus-fixed2.jpg'); /* Mobile-specific image */
-      background-attachment: scroll; /* Change to scroll on small devices */
-      background-size: cover; /* Ensures the image covers the full container */
-    }
-  }
-    /* TRYING */ 
-
-  
-/*Process*/
+}
