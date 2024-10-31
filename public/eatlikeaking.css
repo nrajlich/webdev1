@@ -11603,7 +11603,6 @@ html {
 
 
 
-
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
@@ -11674,6 +11673,8 @@ html {
   .profile .profile-img {
     height: 55vw;
   }
+
+  
   .profile .dots-1 {
     width: 3vw;
     right: 1.5vw;
@@ -11741,3 +11742,12 @@ html {
     left: -2vw;
   }
 }
+
+@media (max-width: 768px) {
+    .profile .profile-img {
+      position: static; /* Removes absolute positioning */
+      transform: none; /* Removes centering transform */
+      height: auto; /* Allows image to scale naturally */
+      width: 100%; /* Optional: makes the image fill the container width */
+      max-height: none; /* Removes height restriction */
+    }}
