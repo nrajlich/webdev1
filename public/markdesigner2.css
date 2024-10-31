@@ -1,0 +1,189 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Container Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px;
+    background-color: #164379;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #90AFC5;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.profile-img {
+    flex: 1 1 200px;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    flex: 2;
+}
+
+.profile-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Work Section */
+.work-section {
+    background-color: #B3E5B0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.work-section h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.work-grid .work-item img {
+    width: 80px; /* Set a fixed small width for work icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing below image */
+    vertical-align: middle;
+}
+.expertise-grid .expertise-item img {
+    width: 30px; /* Set a fixed small width for expertise icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing below image */
+    vertical-align: middle;}
+
+.work-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Expertise Section */
+.expertise-section {
+    background-color: #E3F2FD;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.expertise-section h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.expertise-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonial-section {
+    background-color: #FFCCBC;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.testimonial-section h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #164379;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+}
