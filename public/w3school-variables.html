@@ -1,57 +1,43 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>JavaScript Variables</h1>
-
-<p>In this example, x, y, and z walk into a bar...</p>
-
-<p id="demo"></p>
-
-<script>
-x = 5;
-y = 6;
-z = x + y;
-document.getElementById("demo").innerHTML =
-"x says, 'I'm feeling like " + x + " today!' " + 
-"y replies, 'Well, I'm " + y + ", always one step ahead.' " +
-"z laughs and says, 'Relax, you two! Together we are " + z + ", and that iss what counts!'";
-
-</script>
-
-<p>In this example, <code>let</code> is used to declare variables <code>x</code>, <code>y</code>, and <code>z</code>.</p>
-<p>The <code>let</code> keyword means these variables can be reassigned later if needed.</p>
-
-<p id="demo2"></p>
-
-<script>
-let x = 5; // x starts with the value 5
-let y = 6; // y starts with the value 6
-let z = x + y; // z is calculated as the sum of x and y
-document.getElementById("demo2").innerHTML =
-"x is: " + x + ", y is: " + y + ", and z (x + y) is: " + z +
-". These values can be updated because they are declared with let.";
-</script>
-
-<!DOCTYPE html>
-<html>
-<body>
-<h1>JavaScript Variables</h1>
-
-<p>In this example, <code>const</code> is used to declare variables <code>x</code>, <code>y</code>, and <code>z</code>.</p>
-<p>The <code>const</code> keyword means these variables are constants and cannot be reassigned after their initial declaration.</p>
-
-<p id="demo3"></p>
-
-<script>
-const d = 5; // x is a constant with the value 5
-const e = 6; // y is a constant with the value 6
-const f = d + f; // z is calculated as the sum of x and y and is also a constant
-document.getElementById("demo3").innerHTML =
-"x is: " + x + ", y is: " + y + ", and z (x + y) is: " + z +
-". These values cannot be changed because they are declared with const.";
-</script>
-
-</body>
-</html>
+    <main class="container">
+        <header class="header">
+          <h2>JavaScript Variables</h2>
+          <link rel="stylesheet" href="w3school-variables.css">
+        </header>
+        <section class="content">
+          <!-- JavaScript Let Variables Section -->
+          <div class="content-box">
+            <h2>JavaScript Let Variables</h2>
+            <p>In this example, <code>let</code> is used to declare variables <code>a</code>, <code>b</code>, and <code>c</code>.</p>
+            <p>The <code>let</code> keyword means these variables can be reassigned later if needed.</p>
+            <p id="demo-let"></p>
+            <script>
+              let a = "December, ";
+              let b = 2024;
+              let c = a + b;
+              document.getElementById("demo-let").innerHTML = "The value of c is: " + c;
+            </script>
+          </div>
+    
+          <!-- JavaScript Const Variables Section -->
+          <div class="content-box-const">
+            <h2>JavaScript Const Variables</h2>
+            <p>In this example, <code>const</code> is used to declare variables <code>x</code>, <code>y</code>, and <code>z</code>.</p>
+            <p>The <code>const</code> keyword means these variables are constants and cannot be reassigned after their initial declaration.</p>
+            <p id="demo-const"></p>
+            <script>
+              const x = 2000;
+              const y = 24;
+              const z = x + y;
+              document.getElementById("demo-const").innerHTML = "The value of z is: " + z;
+            </script>
+          </div>
+        </section>
+        <footer class="footer">
+          <p>Note: Please open "View of Page Source" to see the JavaScrip code</p>
+        </footer>
+      </main>
 </body>
 </html>
