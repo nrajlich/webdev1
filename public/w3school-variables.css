@@ -32,7 +32,7 @@ grid-gap: 10px; /* Adds gap between grid items */
 
 .header {
   grid-area: header;
-  background-color: #b3e5b0; /* Soft green background */
+  background-color: #b0d6e5; /* Soft green background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +79,8 @@ grid-gap: 10px; /* Adds gap between grid items */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 15px;
+  height: 50px;
 }
 
 @media screen and (max-width: 640px) {
