@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Life Objects</title>
+  <!-- Connect to the external CSS -->
+  <link rel="stylesheet" href="w3school-objects.css">
+</head>
+
+<body>
+    <div class="container2"><h2>Using an Object Literal</h2>
+
+    <p id="demo1"></p>
+  
+    <script>
+      // Ensure the car object is declared only once
+      const car = {
+        name: "Tesla",
+        model: "Y",
+        year: 2024,
+        color: "black"
+      };
+  
+      // Display Data from Object
+      document.getElementById("demo1").innerHTML =
+        car.name + " " + car.model + " is " + car.color + " and was manufactured in " + car.year + ".";
+    </script> </div>
+
+
+  <div class="container">
+    <h1>Example of Objects</h1>
+    <p>In real life, objects are things like houses, cars, people, animals, or any other subjects.</p>
+    <p>Here is a car object example:</p>
+    <div class="object-container">
+      <img src="images/tesla.png" alt="Tesla Model Y">
+      <div class="properties">
+        <h3>Properties</h3>
+        <ul>
+          <li><strong>car.name:</strong> Tesla</li>
+          <li><strong>car.model:</strong> Model Y</li>
+          <li><strong>car.weight:</strong> 2,003kg</li>
+          <li><strong>car.color:</strong> Black</li>
+        </ul>
+      </div>
+      <div class="methods">
+        <h3>Methods</h3>
+        <ul>
+          <li><strong>car.start():</strong> Starts the car</li>
+          <li><strong>car.drive():</strong> Drives the car</li>
+          <li><strong>car.brake():</strong> Stops the car</li>
+          <li><strong>car.stop():</strong> Turns off the car</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript object representing the car
+    const car2 = {
+      name: "Tesla",
+      model: "Model Y",
+      weight: "2003kg",
+      color: "Midnight Silver",
+      start: function () {
+        console.log("The car has started.");
+      },
+      drive: function () {
+        console.log("The car is driving.");
+      },
+      brake: function () {
+        console.log("The car is braking.");
+      },
+      stop: function () {
+        console.log("The car has stopped.");
+      }
+    };
+
+    // Example of calling the car methods
+    car.start();
+    car.drive();
+    car.brake();
+    car.stop();
+  </script>
+   <div class="container3"><h2>Note: please open the "View Source Page" to see the JavaScript code. </h2>
+
+</body>
+
+</html>
