@@ -5,42 +5,36 @@
         <header class="header">
           <h2>JavaScript Arrays</h2>
           <link rel="stylesheet" href="w3school-arrays.css">
-        </header>s
+        </header>
         <section class="content">
-          <!-- JavaScript Let Variables Section -->
+          <!-- JavaScript Array Basic Example -->
           <div class="content-box">
-            <h2>Example 1</h2>
-            <p></p>
-            <p id="demo-let"></p>
+            <h2>Basic Array Example</h2>
+            <p>Arrays can store multiple values. Here's a list of fruits:</p>
+            <p id="demo-basic"></p>
             <script>
-                const cars = ["Saab", "Volvo", "BMW"];
-                document.getElementById("demo").innerHTML = cars;
-                </script>
+              const fruits = ["Apple", "Banana", "Cherry", "Mango"];
+              document.getElementById("demo-basic").innerHTML = "Fruits: " + fruits.join(", ");
+            </script>
           </div>
     
-          <!-- JavaScript Const Variables Section -->
-          <div class="container">
-            <h1>JavaScript Arrays Example</h1>
-            <p>Click the button to see an array of fruits!</p>
-        
+          <!-- JavaScript Interactive Array Example -->
+          <div class="content-box-const">
+            <h2>Interactive Array Example</h2>
+            <p>Click the button to display a list of fruits:</p>
             <button onclick="showFruits()">Show Fruits</button>
-        
-            <p id="output"></p>
-          </div>
-        
-          <script>
-            // Array of fruits
-            const fruits = ["Apple", "Banana", "Orange", "Mango"];
-        
-            // Function to display fruits
-            function showFruits() {
-              document.getElementById("output").innerHTML = "Fruits: " + fruits.join(", ");
-            }
-          </script>
+            <p id="demo-interactive"></p>
+            <script>
+              const fruitsInteractive = ["Apple", "Banana", "Orange", "Mango"];
+              
+              function showFruits() {
+                document.getElementById("demo-interactive").innerHTML = "Fruits: " + fruitsInteractive.join(", ");
+              }
+            </script>
           </div>
         </section>
         <footer class="footer">
-          <p>Note: Please open "View of Page Source" to see the JavaScrip code</p>
+          <p>Note: Please open "View of Page Source" to see the JavaScript code</p>
         </footer>
       </main>
 </body>

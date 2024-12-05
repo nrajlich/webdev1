@@ -6,7 +6,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #eef7f0; /* Soft background color */
+    background-color: #ffff; /* Soft background color */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
   
   /* Container Styling */
   .container {
-    background-color: #d6f0d6; /* Light green background */
+    background-color: #eaf6eb; /* Light green background */
     padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
