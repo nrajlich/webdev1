@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <main class="container">
+        <header class="header">
+          <h2>JavaScript Arrays</h2>
+          <link rel="stylesheet" href="w3school-arrays.css">
+        </header>s
+        <section class="content">
+          <!-- JavaScript Let Variables Section -->
+          <div class="content-box">
+            <h2>Example 1</h2>
+            <p></p>
+            <p id="demo-let"></p>
+            <script>
+                const cars = ["Saab", "Volvo", "BMW"];
+                document.getElementById("demo").innerHTML = cars;
+                </script>
+          </div>
+    
+          <!-- JavaScript Const Variables Section -->
+          <div class="container">
+            <h1>JavaScript Arrays Example</h1>
+            <p>Click the button to see an array of fruits!</p>
+        
+            <button onclick="showFruits()">Show Fruits</button>
+        
+            <p id="output"></p>
+          </div>
+        
+          <script>
+            // Array of fruits
+            const fruits = ["Apple", "Banana", "Orange", "Mango"];
+        
+            // Function to display fruits
+            function showFruits() {
+              document.getElementById("output").innerHTML = "Fruits: " + fruits.join(", ");
+            }
+          </script>
+          </div>
+        </section>
+        <footer class="footer">
+          <p>Note: Please open "View of Page Source" to see the JavaScrip code</p>
+        </footer>
+      </main>
+</body>
+</html>

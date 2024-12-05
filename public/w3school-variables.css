@@ -75,7 +75,7 @@ grid-gap: 10px; /* Adds gap between grid items */
 }
 
 .footer {
-
+  grid-area: footer;
   background-color: #d9b4e0; /* Soft purple background */
   display: flex;
   justify-content: center;
