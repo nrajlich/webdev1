@@ -11,6 +11,7 @@
 
 <p id="result">The result will appear here.</p>
 
+<!-- JavaScript Function -->
 <script>
   // Function to convert Celsius to Fahrenheit
   function celsiusToFahrenheit(celsius) {
@@ -28,20 +29,22 @@
     document.getElementById("result").innerHTML = 
       `${celsius}°C is equal to ${fahrenheit.toFixed(2)}°F.`;
   }
-<p>How It Works:
-
-1.	User Input:
-•	The user enters a temperature in Celsius in the input box.
-2.	celsiusToFahrenheit Function:
-•	Takes a Celsius temperature as input.
-•	Converts it to Fahrenheit using the formula:
-
-\text{Fahrenheit} = (\text{Celsius} \times \frac{9}{5}) + 32
-
-3.	Result Display:
-•	After clicking the button, the converted Fahrenheit value is displayed below.</p>
-
 </script>
+
+<!-- How It Works Section -->
+<p><strong>How It Works:</strong></p>
+<ol>
+  <li><strong>User Input:</strong> The user enters a temperature in Celsius in the input box.</li>
+  <li><strong>celsiusToFahrenheit Function:</strong>
+    <ul>
+      <li>Takes a Celsius temperature as input.</li>
+      <li>Converts it to Fahrenheit using the formula: <br>
+      <code>Fahrenheit = (Celsius × 9/5) + 32</code>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Result Display:</strong> After clicking the button, the converted Fahrenheit value is displayed below.</li>
+</ol>
 
 </body>
 </html>
