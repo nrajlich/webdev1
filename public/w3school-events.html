@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript HTML Events</title>
+  <!-- Connect to External CSS -->
+  <link rel="stylesheet" href="w3school-events.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>JavaScript HTML Events</h1>
+    <h2>The onclick Attribute</h2>
+
+    <p>Click the button to display the date.</p>
+    <button onclick="displayDate()">The time is?</button>
+
+    <p id="demo"></p>
+  </div>
+
+  <script>
+    function displayDate() {
+      document.getElementById("demo").innerHTML = new Date().toLocaleString();
+    }
+  </script>
+</body>
+
+</html>
