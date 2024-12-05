@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Booleans</title>
+  <link rel="stylesheet" href="w3school-booleans.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>JavaScript Booleans</h1>
+
+    <!-- Example 1 -->
+    <div class="example">
+      <h2>Boolean Value of 0</h2>
+      <p>Check the Boolean value of the number <code>0</code>:</p>
+      <p id="example1"></p>
+      <script>
+        let value1 = 0;
+        document.getElementById("example1").innerHTML = Boolean(value1);
+      </script>
+      <p>The number <code>0</code> is a falsy value in JavaScript. When converted to a Boolean, it evaluates to <strong>false</strong>.</p>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="example">
+      <h2>Boolean Value of 1</h2>
+      <p>Check the Boolean value of the number <code>1</code>:</p>
+      <p id="example2"></p>
+      <script>
+        let value2 = 1;
+        document.getElementById("example2").innerHTML = Boolean(value2);
+      </script>
+      <p>The number <code>1</code> is a truthy value in JavaScript. When converted to a Boolean, it evaluates to <strong>true</strong>.</p>
+    </div>
+
+    <!-- Example 3 -->
+    <div class="example">
+      <h2>True Example</h2>
+      <p>Check if a number is greater than another number:</p>
+      <button onclick="checkTrue()">Check</button>
+      <p id="example3"></p>
+      <p>The condition <code>10 > 5</code> is true because <code>10</code> is greater than <code>5</code>.</p>
+    </div>
+    <script>
+      function checkTrue() {
+        const num1 = 10;
+        const num2 = 5;
+        document.getElementById("example3").innerHTML = Boolean(num1 > num2);
+      }
+    </script>
+
+    <!-- Example 4 -->
+    <div class="example">
+      <h2>False Example</h2>
+      <p>Check if a number is less than another number:</p>
+      <button onclick="checkFalse()">Check</button>
+      <p id="example4"></p>
+      <p>The condition <code>3 > 7</code> is false because <code>3</code> is not greater than <code>7</code>.</p>
+    </div>
+    <script>
+      function checkFalse() {
+        const num1 = 3;
+        const num2 = 7;
+        document.getElementById("example4").innerHTML = Boolean(num1 > num2);
+      }
+    </script>
+
+    <!-- Note Section -->
+    <div class="note">
+      <p>Note: Refresh the page to run the code examples again.</p>
+    </div>
+  </div>
+</body>
+
+</html>
