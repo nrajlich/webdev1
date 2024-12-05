@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Comparisons</title>
+  <link rel="stylesheet" href="w3school-comparisons.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>JavaScript Comparisons</h1>
+
+    <!-- Example 1: Equality Comparison -->
+    <div class="example">
+      <h2>Equality (==) Comparison</h2>
+      <p>Check if two numbers are equal:</p>
+      <button onclick="checkEquality()">Check</button>
+      <p id="example1"></p>
+      <p>The equality operator <code>==</code> checks if two values are equal. It does not consider data type.</p>
+    </div>
+    <script>
+      function checkEquality() {
+        const num1 = 10;
+        const num2 = "10"; // String
+        const result = num1 == num2; // True because == ignores type
+        document.getElementById("example1").innerHTML = `Is ${num1} equal to "${num2}"? ${result}`;
+      }
+    </script>
+
+    <!-- Example 2: Strict Equality Comparison -->
+    <div class="example">
+      <h2>Strict Equality (===) Comparison</h2>
+      <p>Check if two values and their types are equal:</p>
+      <button onclick="checkStrictEquality()">Check</button>
+      <p id="example2"></p>
+      <p>The strict equality operator <code>===</code> checks if two values and their data types are equal.</p>
+    </div>
+    <script>
+      function checkStrictEquality() {
+        const num1 = 10;
+        const num2 = "10"; // String
+        const result = num1 === num2; // False because types are different
+        document.getElementById("example2").innerHTML = `Is ${num1} strictly equal to "${num2}"? ${result}`;
+      }
+    </script>
+
+    <!-- Example 3: Greater Than Comparison -->
+    <div class="example">
+      <h2>Greater Than (>) Comparison</h2>
+      <p>Check if one number is greater than another:</p>
+      <button onclick="checkGreaterThan()">Check</button>
+      <p id="example3"></p>
+      <p>The greater than operator <code>&gt;</code> checks if the first value is larger than the second.</p>
+    </div>
+    <script>
+      function checkGreaterThan() {
+        const num1 = 15;
+        const num2 = 10;
+        const result = num1 > num2; // True
+        document.getElementById("example3").innerHTML = `Is ${num1} greater than ${num2}? ${result}`;
+      }
+    </script>
+
+    <!-- Example 4: Less Than or Equal Comparison -->
+    <div class="example">
+      <h2>Less Than or Equal (<=) Comparison</h2>
+      <p>Check if one number is less than or equal to another:</p>
+      <button onclick="checkLessThanOrEqual()">Check</button>
+      <p id="example4"></p>
+      <p>The less than or equal operator <code>&lt;=</code> checks if the first value is smaller than or equal to the second.</p>
+    </div>
+    <script>
+      function checkLessThanOrEqual() {
+        const num1 = 20;
+        const num2 = 20;
+        const result = num1 <= num2; // True because they are equal
+        document.getElementById("example4").innerHTML = `Is ${num1} less than or equal to ${num2}? ${result}`;
+      }
+    </script>
+
+    <!-- Note Section -->
+    <div class="note">
+      <p>Note: Refresh the page to run the code examples again.</p>
+    </div>
+  </div>
+</body>
+
+</html>
