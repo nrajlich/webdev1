@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celsius to Fahrenheit Converter</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="w3school-function.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">JavaScript Function</div>
+    <div class="content">
+      <h1>Celsius to Fahrenheit Converter</h1>
+      <p>Enter a temperature in Celsius to convert it to Fahrenheit:</p>
+
+      <input type="number" id="celsiusInput" placeholder="Enter Celsius">
+      <button onclick="convertToFahrenheit()">Convert</button>
+
+      <p id="result">The result will appear here.</p>
+
+      <!-- How It Works Section -->
+      <p><strong>How It Works:</strong></p>
+      <ol>
+        <li><strong>User Input:</strong> The user enters a temperature in Celsius in the input box.</li>
+        <li><strong>celsiusToFahrenheit Function:</strong>
+          <ul>
+            <li>Takes a Celsius temperature as input.</li>
+            <li>Converts it to Fahrenheit using the formula: <br>
+              <code>Fahrenheit = (Celsius × 9/5) + 32</code>
+            </li>
+          </ul>
+        </li>
+        <li><strong>Result Display:</strong> After clicking the button, the converted Fahrenheit value is displayed below.</li>
+      </ol>
+    </div>
+    <div class="footer">FOOTER</div>
+  </div>
+
+  <!-- JavaScript Function -->
+  <script>
+    // Function to convert Celsius to Fahrenheit
+    function celsiusToFahrenheit(celsius) {
+      return (celsius * 9 / 5) + 32;
+    }
+
+    function convertToFahrenheit() {
+      // Get the Celsius value from the input field
+      let celsius = document.getElementById("celsiusInput").value;
+
+      // Convert the value to Fahrenheit using the function
+      let fahrenheit = celsiusToFahrenheit(celsius);
+
+      // Display the result
+      document.getElementById("result").innerHTML =
+        `${celsius}°C is equal to ${fahrenheit.toFixed(2)}°F.`;
+    }
+  </script>
+</body>
+
+</html>
