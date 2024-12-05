@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Array Iterations</title>
+  <link rel="stylesheet" href="w3school-arrays.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="header">
+      <h2>JavaScript Array Iterations</h2>
+    </header>
+    <section class="content">
+
+      <!-- For Loop Example -->
+      <div class="content-box">
+        <h2>Using a <code>for</code> Loop</h2>
+        <p>The <code>for</code> loop is one of the simplest ways to iterate through an array. Click the button to display the fruits:</p>
+        <button onclick="forLoopExample()">Run For Loop</button>
+        <p id="demo-for">Original Fruits: Apple, Banana, Cherry</p>
+
+        <script>
+          let fruitsFor = ["Apple", "Banana", "Cherry"];
+
+          function forLoopExample() {
+            let result = "";
+            for (let i = 0; i < fruitsFor.length; i++) {
+              result += fruitsFor[i] + " ";
+            }
+            document.getElementById("demo-for").innerHTML = "Fruits: " + result.trim();
+          }
+        </script>
+      </div>
+
+      <!-- forEach Example -->
+      <div class="content-box-const">
+        <h2>Using <code>forEach()</code></h2>
+        <p>The <code>forEach()</code> method executes a function for each element in an array. Click the button to see all fruits in uppercase:</p>
+        <button onclick="forEachExample()">Run forEach</button>
+        <p id="demo-foreach">Original Fruits: Apple, Banana, Cherry</p>
+
+        <script>
+          let fruitsForEach = ["Apple", "Banana", "Cherry"];
+
+          function forEachExample() {
+            let upperCaseFruits = [];
+            fruitsForEach.forEach(function (fruit) {
+              upperCaseFruits.push(fruit.toUpperCase());
+            });
+            document.getElementById("demo-foreach").innerHTML = "Fruits in Uppercase: " + upperCaseFruits.join(", ");
+          }
+        </script>
+      </div>
+
+      <!-- map Example -->
+      <div class="content-box">
+        <h2>Using <code>map()</code></h2>
+        <p>The <code>map()</code> method creates a new array by applying a function to every element. Click the button to double the numbers:</p>
+        <button onclick="mapExample()">Run Map</button>
+        <p id="demo-map">Original Numbers: 1, 2, 3, 4, 5</p>
+
+        <script>
+          let numbersMap = [1, 2, 3, 4, 5];
+
+          function mapExample() {
+            let doubledNumbers = numbersMap.map(function (num) {
+              return num * 2;
+            });
+            document.getElementById("demo-map").innerHTML = "Doubled Numbers: " + doubledNumbers.join(", ");
+          }
+        </script>
+      </div>
+
+      <!-- filter Example -->
+      <div class="content-box-const">
+        <h2>Using <code>filter()</code></h2>
+        <p>The <code>filter()</code> method creates a new array with elements that pass a test. Click the button to filter even numbers:</p>
+        <button onclick="filterExample()">Run Filter</button>
+        <p id="demo-filter">Original Numbers: 1, 2, 3, 4, 5, 6</p>
+
+        <script>
+          let numbersFilter = [1, 2, 3, 4, 5, 6];
+
+          function filterExample() {
+            let evenNumbers = numbersFilter.filter(function (num) {
+              return num % 2 === 0;
+            });
+            document.getElementById("demo-filter").innerHTML = "Even Numbers: " + evenNumbers.join(", ");
+          }
+        </script>
+      </div>
+
+    </section>
+    <footer class="footer">
+      <p>Note: These are just 4 examples of array iteration methods. Other methods include <code>reduce()</code>, <code>find()</code>, <code>some()</code>, <code>every()</code>, and <code>keys()</code>, among others.</p>
+    </footer>
+  </main>
+</body>
+
+</html>

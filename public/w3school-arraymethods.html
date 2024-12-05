@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <main class="container">
+        <header class="header">
+          <h2>JavaScript Array Methods</h2>
+          <link rel="stylesheet" href="w3school-arraymethods.css">
+        </header>
+        <section class="content">
+          <!-- JavaScript Simple Array Method Section -->
+          <div class="content-box">
+            <h2>Using the <code>push()</code> Method</h2>
+            <p>The <code>push()</code> method adds a new element to the end of an array. Click the button to add a fruit to the list:</p>
+
+            <button onclick="addFruit()">Add Fruit</button>
+            <p id="demo-push">Current Fruits: Apple, Banana, Mango</p>
+
+            <script>
+              let fruits = ["Apple", "Banana", "Mango"];
+
+              function addFruit() {
+                fruits.push("Orange");
+                document.getElementById("demo-push").innerHTML = 
+                  "Current Fruits: " + fruits.join(", ");
+              }
+            </script>
+          </div>
+    
+          <!-- JavaScript Advanced Array Method Section -->
+          <div class="content-box-const">
+            <h2>Using the <code>filter()</code> Method</h2>
+            <p>The <code>filter()</code> method creates a new array with elements that pass a test. Click the button to see numbers greater than 5:</p>
+
+            <button onclick="filterNumbers()">Filter Numbers</button>
+            <p id="demo-filter">Original Numbers: 2, 4, 6, 8, 10</p>
+
+            <script>
+              let numbers = [2, 4, 6, 8, 10];
+
+              function filterNumbers() {
+                let filtered = numbers.filter(function(num) {
+                  return num > 5;
+                });
+                document.getElementById("demo-filter").innerHTML = 
+                  "Numbers Greater Than 5: " + filtered.join(", ");
+              }
+            </script>
+          </div>
+        </section>
+        <footer class="footer">
+          <p>Note: Please open "View of Page Source" to see the JavaScript code</p>
+        </footer>
+      </main>
+</body>
+</html>
