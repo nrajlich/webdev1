@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Conditions</title>
+  <link rel="stylesheet" href="w3school-arraymethods.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="header">
+      <h2>JavaScript Conditions</h2>
+    </header>
+    <section class="content">
+      <!-- Simple If Condition Example -->
+      <div class="content-box">
+        <h2>Using the <code>if</code> Statement</h2>
+        <p>This example checks if a number is greater than 10. Click the button to check:</p>
+        <button onclick="checkNumber()">Check Number</button>
+        <p id="demo-if"></p>
+        <p>
+          • This example checks if a number is greater than 10 using the <code>if</code> statement.<br>
+          • If the condition is true, it displays a message.<br>
+          • Output: <strong>15 is greater than 10.</strong>
+        </p>
+        <script>
+          function checkNumber() {
+            let number = 15; // Example number
+            if (number > 10) {
+              document.getElementById("demo-if").innerHTML = `${number} is greater than 10.`;
+            }
+          }
+        </script>
+      </div>
+
+      <!-- If-Else Condition Example -->
+      <div class="content-box-const">
+        <h2>Using the <code>if-else</code> Statement</h2>
+        <p>This example checks if a number is even or odd. Click the button to check:</p>
+        <button onclick="checkEvenOdd()">Check Even or Odd</button>
+        <p id="demo-if-else"></p>
+        <p>
+          • This example checks if a number is even or odd using the <code>if-else</code> statement.<br>
+          • The modulo operator <code>%</code> determines the remainder when dividing by 2.<br>
+          • Output: <strong>7 is odd.</strong>
+        </p>
+        <script>
+          function checkEvenOdd() {
+            let number = 7; // Example number
+            if (number % 2 === 0) {
+              document.getElementById("demo-if-else").innerHTML = `${number} is even.`;
+            } else {
+              document.getElementById("demo-if-else").innerHTML = `${number} is odd.`;
+            }
+          }
+        </script>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Note: Please open "View Page Source" to see the JavaScript code</p>
+    </footer>
+  </main>
+</body>
+</html>

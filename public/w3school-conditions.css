@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    height: 80vh;
+    max-width: 1200px;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #b0d6e5; /* Soft blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    height: 80px;
+  }
+  
+  .content {
+    flex-grow: 1;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .content-box {
+    background-color: #b3e5b0; /* Light green background for first example */
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    overflow-y: auto;
+  }
+  
+  .content-box-const {
+    background-color: #f8e58d; /* Light yellow background for second example */
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    overflow-y: auto;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0078d4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #d9b4e0; /* Soft purple background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 50px;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .content {
+      grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+  }
