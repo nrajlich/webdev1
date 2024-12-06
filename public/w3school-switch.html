@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Switch Statements</title>
+  <link rel="stylesheet" href="w3school-arraymethods.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="header">
+      <h2>JavaScript Switch Statements</h2>
+    </header>
+    <section class="content">
+      <!-- Example 1: Day of the Week -->
+      <div class="content-box">
+        <h2>Find the Day of the Week</h2>
+        <p>Enter a number (1-7) to find the corresponding day of the week:</p>
+        <input type="number" id="dayInput" placeholder="Enter a number (1-7)">
+        <button onclick="findDay()">Find Day</button>
+        <p id="demo-day"></p>
+        <p>
+          • This example uses the <code>switch</code> statement to match a number with a day of the week.<br>
+          • For example, 1 is Monday, 2 is Tuesday, and so on.<br>
+          • If the number does not match (e.g., 8), a default message is displayed.
+        </p>
+        <script>
+          function findDay() {
+            const day = parseInt(document.getElementById("dayInput").value);
+            let result;
+            switch (day) {
+              case 1:
+                result = "Monday";
+                break;
+              case 2:
+                result = "Tuesday";
+                break;
+              case 3:
+                result = "Wednesday";
+                break;
+              case 4:
+                result = "Thursday";
+                break;
+              case 5:
+                result = "Friday";
+                break;
+              case 6:
+                result = "Saturday";
+                break;
+              case 7:
+                result = "Sunday";
+                break;
+              default:
+                result = "Invalid day number. Please enter a number between 1 and 7.";
+            }
+            document.getElementById("demo-day").innerHTML = result;
+          }
+        </script>
+      </div>
+
+      <!-- Example 2: Fruit Selector -->
+      <div class="content-box-const">
+        <h2>Select a Fruit</h2>
+        <p>Enter a fruit name to see its color:</p>
+        <input type="text" id="fruitInput" placeholder="Enter a fruit name">
+        <button onclick="findFruitColor()">Find Color</button>
+        <p id="demo-fruit"></p>
+        <p>
+          • This example uses the <code>switch</code> statement to match a fruit name with its color.<br>
+          • For example, Apple is red, Banana is yellow, and so on.<br>
+          • If the fruit is not listed, a default message is shown.
+        </p>
+        <script>
+          function findFruitColor() {
+            const fruit = document.getElementById("fruitInput").value.toLowerCase();
+            let color;
+            switch (fruit) {
+              case "apple":
+                color = "Red";
+                break;
+              case "banana":
+                color = "Yellow";
+                break;
+              case "grape":
+                color = "Purple";
+                break;
+              case "orange":
+                color = "Orange";
+                break;
+              default:
+                color = "Unknown fruit. Please try another.";
+            }
+            document.getElementById("demo-fruit").innerHTML = `The color of ${fruit} is: ${color}`;
+          }
+        </script>
+      </div>
+
+      <!-- Example 3: Grade System -->
+      <div class="content-box">
+        <h2>Find the Grade</h2>
+        <p>Enter a score (0-100) to see the grade:</p>
+        <input type="number" id="scoreInput" placeholder="Enter a score (0-100)">
+        <button onclick="findGrade()">Find Grade</button>
+        <p id="demo-grade"></p>
+        <p>
+          • This example uses the <code>switch</code> statement to determine a grade based on score ranges.<br>
+          • For example, scores 90 and above are "A", 80-89 are "B", and so on.<br>
+          • Any score outside 0-100 results in an invalid message.
+        </p>
+        <script>
+          function findGrade() {
+            const score = parseInt(document.getElementById("scoreInput").value);
+            let grade;
+            switch (true) {
+              case score >= 90:
+                grade = "A";
+                break;
+              case score >= 80:
+                grade = "B";
+                break;
+              case score >= 70:
+                grade = "C";
+                break;
+              case score >= 60:
+                grade = "D";
+                break;
+              case score >= 0:
+                grade = "F";
+                break;
+              default:
+                grade = "Invalid score. Please enter a number between 0 and 100.";
+            }
+            document.getElementById("demo-grade").innerHTML = `Your grade is: ${grade}`;
+          }
+        </script>
+      </div>
+
+      <!-- Example 4: Traffic Light -->
+      <div class="content-box-const">
+        <h2>Traffic Light</h2>
+        <p>Enter a traffic light color to see what you should do:</p>
+        <input type="text" id="lightInput" placeholder="Enter a traffic light color">
+        <button onclick="checkTrafficLight()">Check</button>
+        <p id="demo-traffic"></p>
+        <p>
+          • This example uses the <code>switch</code> statement to provide instructions based on a traffic light color.<br>
+          • For example, Red means stop, Green means go, and so on.<br>
+          • If the color is unknown, a default message is shown.
+        </p>
+        <script>
+          function checkTrafficLight() {
+            const color = document.getElementById("lightInput").value.toLowerCase();
+            let action;
+            switch (color) {
+              case "red":
+                action = "Stop";
+                break;
+              case "yellow":
+                action = "Get ready";
+                break;
+              case "green":
+                action = "Go";
+                break;
+              default:
+                action = "Invalid color. Please enter Red, Yellow, or Green.";
+            }
+            document.getElementById("demo-traffic").innerHTML = `The light is ${color}. You should: ${action}`;
+          }
+        </script>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Note: Refresh the page to run the code examples again.</p>
+    </footer>
+  </main>
+</body>
+</html>
