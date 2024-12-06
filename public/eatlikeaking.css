@@ -11767,3 +11767,35 @@ html {
         margin-right: auto;
     }
 
+/*JQUERY SECTION*/
+.container-jquery {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px; /* Adds padding below the carousel */
+}
+
+/* Jumbotron */
+.jumbotron-custom {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border: 2px solid #ccc;
+  text-align: center;
+}
+
+/* Carousel */
+.carousel img {
+  width: 100%; /* Full width of the carousel */
+  height: 600px; /* Fixed height */
+  object-fit: cover; /* Ensures the image fits within the box without stretching */
+  border-radius: 5px;
+}
+
+.carousel {
+  margin-bottom: 50px; /* Adds space after the carousel */
+}
+
+/* Tooltip */
+.tooltip-inner {
+  background-color: #333;
+  color: white;
+}
