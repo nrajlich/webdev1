@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Loops</title>
+  <link rel="stylesheet" href="w3school-loop.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="header">
+      <h2>JavaScript Loops</h2>
+    </header>
+    <section class="content">
+      <!-- Example 1: For Loop with Numbers -->
+      <div class="content-box">
+        <h2>Using a <code>for</code> Loop with Numbers</h2>
+        <p>This example uses a <code>for</code> loop to display even numbers from 2 to 10:</p>
+        <button onclick="evenNumbers()">Run For Loop</button>
+        <p id="demo-for-numbers"></p>
+        <p>
+          • This example uses a <code>for</code> loop to iterate over a range of numbers.<br>
+          • It checks if each number is even and displays it.
+        </p>
+        <script>
+          function evenNumbers() {
+            let output = "";
+            for (let i = 2; i <= 10; i += 2) {
+              output += i + " ";
+            }
+            document.getElementById("demo-for-numbers").innerHTML = `Even Numbers: ${output.trim()}`;
+          }
+        </script>
+      </div>
+
+      <!-- Example 2: ForEach Loop with Fruits -->
+      <div class="content-box-const">
+        <h2>Using the <code>forEach</code> Method with Fruits</h2>
+        <p>This example uses <code>forEach</code> to display a list of fruits:</p>
+        <button onclick="listFruits()">Run forEach Loop</button>
+        <p id="demo-for-fruits"></p>
+        <p>
+          • This example uses the <code>forEach</code> method to iterate through an array of fruits.<br>
+          • It lists all the fruits in the array.
+        </p>
+        <script>
+          function listFruits() {
+            const fruits = ["Apple", "Banana", "Mango", "Orange"];
+            let output = "";
+            fruits.forEach(function (fruit) {
+              output += fruit + " ";
+            });
+            document.getElementById("demo-for-fruits").innerHTML = `Fruits: ${output.trim()}`;
+          }
+        </script>
+      </div>
+
+      <!-- Example 3: While Loop with Animals -->
+      <div class="content-box">
+        <h2>Using a <code>while</code> Loop with Animals</h2>
+        <p>This example uses a <code>while</code> loop to display a list of animals:</p>
+        <button onclick="listAnimals()">Run While Loop</button>
+        <p id="demo-while-animals"></p>
+        <p>
+          • This example uses a <code>while</code> loop to iterate through an array of animals.<br>
+          • It displays each animal in the array until the end of the list is reached.
+        </p>
+        <script>
+          function listAnimals() {
+            const animals = ["Cat", "Dog", "Elephant", "Lion", "Tiger"];
+            let output = "";
+            let i = 0;
+            while (i < animals.length) {
+              output += animals[i] + " ";
+              i++;
+            }
+            document.getElementById("demo-while-animals").innerHTML = `Animals: ${output.trim()}`;
+          }
+        </script>
+      </div>
+
+      <!-- Example 4: Do...While Loop with Days of the Week -->
+      <div class="content-box-const">
+        <h2>Using a <code>do...while</code> Loop with Days of the Week</h2>
+        <p>This example uses a <code>do...while</code> loop to display days of the week:</p>
+        <button onclick="listDays()">Run Do...While Loop</button>
+        <p id="demo-do-while-days"></p>
+        <p>
+          • This example uses a <code>do...while</code> loop to iterate through an array of days.<br>
+          • It ensures that at least one day is displayed, even if the array is empty.
+        </p>
+        <script>
+          function listDays() {
+            const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+            let output = "";
+            let i = 0;
+            do {
+              output += days[i] + " ";
+              i++;
+            } while (i < days.length);
+            document.getElementById("demo-do-while-days").innerHTML = `Days of the Week: ${output.trim()}`;
+          }
+        </script>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Note: Refresh the page to run the code examples again.</p>
+    </footer>
+  </main>
+</body>
+
+</html>
