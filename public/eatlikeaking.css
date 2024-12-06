@@ -391,6 +391,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -11780,6 +11781,7 @@ html {
   padding: 2rem;
   border: 2px solid #ccc;
   text-align: center;
+margin-top: 20px;
 }
 
 /* Carousel */
