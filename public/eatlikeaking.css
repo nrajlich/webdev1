@@ -11777,7 +11777,7 @@ html {
 
 /* Jumbotron */
 .jumbotron-custom {
-  background-color: #f9f9f9;
+  background-image: url("images/cover.jpg");
   padding: 2rem;
   border: 2px solid #ccc;
   text-align: center;
