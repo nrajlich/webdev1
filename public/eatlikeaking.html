@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Eat liek </title>
+    <title>Eat like a king</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Custom Google font-->
@@ -236,6 +236,7 @@
 
     <!-- Footer-->
     <footer class="bg-white py-4 mt-auto">
+        
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
@@ -248,8 +249,43 @@
                     <span class="mx-1">&middot;</span>
                     <a class="small" href="#!">Contact</a>
                 </div>
-            </div>
-        </div>
+                  <div class="container mt-5">
+                    <div class="container mt-5">
+                        <!-- Subscribe Form -->
+                        <h2 class="mb-4">Subscribe to Our Newsletter</h2>
+                        <form id="subscribeForm" onsubmit="showAlert(event)">
+                            <div class="form-group">
+                                <label for="email">Enter your email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <!-- Add Tooltip to Subscribe Button -->
+                            <button type="submit" class="btn btn-primary mt-3" 
+                                    data-toggle="tooltip" data-placement="top" title="Click to subscribe to our newsletter!">
+                                Subscribe
+                            </button>
+                        </form>
+                    
+                        <!-- Success Alert -->
+                        <div class="alert alert-success mt-4 d-none" id="successAlert" role="alert">
+                            You have successfully subscribed to our newsletter!
+                            <button type="button" class="close" onclick="hideAlert()" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+      
+        <script>
+            // Function to show the success alert
+            function showAlert(event) {
+                event.preventDefault(); // Prevents form submission
+                document.getElementById('successAlert').classList.remove('d-none'); // Shows the alert
+            }
+    
+            // Function to hide the alert
+            function hideAlert() {
+                document.getElementById('successAlert').classList.add('d-none'); // Hides the alert
+            }
+        </script>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
