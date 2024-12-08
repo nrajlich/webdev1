@@ -92,33 +92,79 @@ let questions = [
         answer: 2,
     },
 ];
-const SCORE_POINTS = 100;
-const MAX_QUESTIONS = 4;
 
+const SCORE_POINTS = 100;
+const MAX_QUESTIONS = 10; // Updated to allow all 10 questions
+
+// Function to start the game
 startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...questions];
+    availableQuestions = [...questions]; // Copy all questions
     getNewQuestion();
 };
 
+// Function to get a new question
 getNewQuestion = () => {
-    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+    // End the quiz if all questions are answered
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-
-        return window.location.assign('/end.html');
+        return window.location.assign('/end.html'); // Redirect to end page
     }
 
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
+    // Randomly select a question
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
 
+    // Set choices text
     choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
     });
+
+    // Remove the current question from the pool
+    availableQuestions.splice(questionsIndex, 1);
+    acceptingAnswers = true;
 };
+
+// Handle user answers
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if (!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
+
+        // Determine if the answer is correct or incorrect
+        let classToApply =
+            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+        if (classToApply === 'correct') {
+            incrementScore(SCORE_POINTS); // Increment score for correct answers
+        }
+
+        // Apply the class for visual feedback
+        selectedChoice.closest('.choice-container').classList.add(classToApply);
+
+        // Remove the class and move to the next question
+        setTimeout(() => {
+            selectedChoice.closest('.choice-container').classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000);
+    });
+});
+
+// Function to increment score
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+};
+
+// Start the game
+startGame();
