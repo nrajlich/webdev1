@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+:root {
+    background-color: rgb(29, 26, 26);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nova Square', cursive;
+}
+
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(29, 26, 26);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Space between sections */
+    text-align: center;
+}
+
+/* Score Heading */
+#finalScore {
+    font-size: 6rem;
+    margin: 0;
+}
+
+/* Form Section */
+.end-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Spacing between form elements */
+    max-width: 30rem;
+    width: 100%;
+}
+
+#end-text {
+    font-size: 2rem;
+}
+
+input {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    box-shadow: 0 0.1rem 1.4rem rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 150ms, box-shadow 150ms;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0.4rem 1.4rem rgba(8, 114, 244, 0.6);
+}
+
+#saveScoreBtn:disabled {
+    background: rgb(3, 42, 234);
+    cursor: not-allowed;
+}
+
+a.btn {
+    display: block;
+}
+
+#saveScoreBtn {
+
+}
+
+/* Additional Button Styles */
+a.btn .fas {
+    margin-left: 0.5rem;
+}
