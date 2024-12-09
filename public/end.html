@@ -14,7 +14,7 @@
             <form class="end-form-container">
                 <h2 id="end-text">Enter your name below to save your score!</h2>
                 <input type="text" name="name" id="username" placeholder="Enter your name">
-                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+                <button class="btn" id="saveScoreBtn" onclick="saveHighScore(event); event.preventDefault();">Save</button>
                 <a href="/game.html" class="btn">Play Again</a>
             <a href="/quiz.html" class="btn"><i class="fas fa-home"></i> Go Home</a>
             </form>
@@ -22,6 +22,5 @@
         </div>
     </div>
     <script src="end.js"></script>
-    <script src="highscores.js"></script>
 </body>
 </html>
