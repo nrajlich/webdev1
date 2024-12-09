@@ -65,7 +65,7 @@ let questions = [
         choice2: 'It reflects the ocean',
         choice3: 'It just is',
         choice4: 'Magic',
-        answer: 3,
+        answer: 2,
     },
     {
         question: "How many continents are there?",
