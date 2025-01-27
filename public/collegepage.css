@@ -23,8 +23,8 @@ section {
   display: flex; /* Establishes a flexbox layout for the header content */
   justify-content: space-between; /* Distributes items evenly with space between them */
   align-items: center; /* Aligns items vertically at the center */
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 
